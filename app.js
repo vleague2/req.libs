@@ -15,7 +15,7 @@ const port = process.env.PORT || 5000
 app.use("/", serveStatic ( path.join (__dirname, '/dist') ) )
 // Create default port to serve the app on
 
-db.sequelize.sync({ force: true }).then(function() {
+db.sequelize.sync().then(function() {
     app.listen(port)
     // Log port number
     console.log('Server listening on port: ' + port)
