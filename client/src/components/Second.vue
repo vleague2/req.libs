@@ -5,13 +5,12 @@
   </div>
 </template>
 
-
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'Second',
   data () {
     return {
-      msg: 'This is tAAAAANAnnnd its gone'
+      msg: 'HALO IS A TYPEWRITER'
     }
   }
 }
