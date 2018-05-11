@@ -5,7 +5,7 @@ const serveStatic = require('serve-static')
 const path = require('path')
 // create the app express
 const app = express()
-const db = require("./models");
+const db = require("./migrations");
 
 const port = process.env.PORT || 5000
 
