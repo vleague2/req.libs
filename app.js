@@ -17,7 +17,7 @@ const users = require('./routes/users');
 
 // create the app express
 const app = express()
-const db = require("./migrations");
+const db = require("./models");
 
 //View Engine * might need to be adjusted as this was originally set up with handlebars in mind
 app.set('views', path.join(__dirname,'views'));
