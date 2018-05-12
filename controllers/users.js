@@ -14,6 +14,11 @@ router.get('/register', (req, res)=>{
     res.render('users/register');
 }); 
 
+router.get('/logout', (req, res)=>{
+    req.logout();
+    res.redirect('/');
+}); 
+
 router.post('/register', (req, res) =>{
     let errors = [];
     // This requires the password to be longer than 5 characters
@@ -54,7 +59,7 @@ router.post('/register', (req, res) =>{
                 bcrypt.genSalt(10, (err, salt) =>{
                     bcrypt.hash(insecurePass, salt, (err,hash)=>{
                         let newUser = {
-                            username:req.body.userName,
+                            username:req.body.userName.toLowerCase(),
                             email:req.body.email,
                             password:hash
                         }
@@ -71,16 +76,23 @@ router.post('/register', (req, res) =>{
     
 });
 
-
-
-// router.post('/login', (req, res) =>{
-//     db.User.findOne({
-//         where:{
-//             username: req.body.username
-//         }
-//     }).then((user)=>{
-//         let userId = user.dataValues.id;
-//     })
-// });
+router.post('/login', (req, res, next) =>{
+    db.User.findOne({
+        where:{
+            username: req.body.userName.toLowerCase()
+        }
+    }).then((user)=>{
+        let userId = user.dataValues.id;
+        if (user){
+            // calling passport authenticate method
+            passport.authenticate('local',{
+                successRedirect:"/stories",
+                failureRedirect:"/auth/login",
+                failureFlash:"Invalid username or password",
+                successFlash:`Welcome ${user.dataValues.username}`
+            })(req,res,next);
+        }
+    });
+});
 
 module.exports = router;
