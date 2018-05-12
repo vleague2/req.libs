@@ -1,5 +1,5 @@
 var express = require("express");
-
+const {ensureLoggedIn, guest} = require('../helpers/auth');
 var router = express.Router();
 
 /* passport is not defined
@@ -17,7 +17,7 @@ router.post('/login',
 */
    
 // basic get route for home page & testing handlebars pages
-router.get('/', (req, res) => {
+router.get('/', guest, (req, res) => {
   res.render("index");
 })
 
