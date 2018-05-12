@@ -11,6 +11,7 @@ const LocalStrategy = require('passport-local').Strategy;
 const Sequelize = require ('sequelize');
 
 
+SALT_WORK_FACTOR = 12;
 
 // const routes = require('./routes/index');
 // const users = require('./routes/users');
@@ -29,7 +30,7 @@ app.set('views', path.join(__dirname,'views'));
 
 //BodyParser Middleware
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false}));
+app.use(bodyParser.urlencoded({ extended: true}));
 app.use(cookieParser());
 
 const port = process.env.PORT || 5000
