@@ -20,6 +20,9 @@ const exphbs = require('express-handlebars');
 const app = express()
 const db = require("./models");
 
+
+require("./routes/stories-api-routes")(app);
+
 // setting up handlebars~~~~
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
