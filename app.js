@@ -17,7 +17,7 @@ const exphbs = require('express-handlebars');
 // const users = require('./routes/users');
 
 // this will change a little once we have our controllers organized
-const routes = require('./controllers/routes');
+const routes = require('./routes/routes');
 
 // create the app express
 const app = express()
