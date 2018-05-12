@@ -33,3 +33,7 @@ button {
 .logo {
     color: #e8e9eb;
 }
+
+.form-control {
+    margin-bottom: 15px;
+}
