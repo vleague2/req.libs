@@ -1,4 +1,6 @@
 module.exports = function(sequelize, DataTypes) {
+
+  // validation for future user input
     var VarBlanks = sequelize.define("VarBlanks", {
       varBlanks: {
         type: DataTypes.STRING,
