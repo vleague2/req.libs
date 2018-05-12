@@ -9,9 +9,10 @@ const session = require('express-session');
 const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
 const Sequelize = require ('sequelize');
-// const vueExpress = require('express-vue');
+const exphbs = require('express-handlebars');
 
 
+// THESE ROUTES DON'T EXIST????
 // const routes = require('./routes/index');
 // const users = require('./routes/users');
 
@@ -19,24 +20,26 @@ const Sequelize = require ('sequelize');
 const app = express()
 const db = require("./models");
 
+
 require("./routes/stories-api-routes")(app);
 
-
-//View Engine * might need to be adjusted as this was originally set up with handlebars in mind
-app.set('views', path.join(__dirname,'views'));
-//These next two might need to have the "vue" dependency installed and use that to replace express-vue
-// app.engine('express-vue', vueExpress({defaultLayout:'layout'}));
-//the defaultLayout above is referring to the default layoutfile so ours would be called layout.vue
+// setting up handlebars~~~~
+app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+app.set("view engine", "handlebars");
+ 
+// setting our static content to the public folder
+app.use(express.static("public"));
 
 //BodyParser Middleware
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false}));
+
+// maybe change this to true?
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 const port = process.env.PORT || 5000
 
-// create middleware to serve the app
-app.use("/", serveStatic ( path.join (__dirname, '/dist') ) )
+
 // Create default port to serve the app on
 
 db.sequelize.sync().then(function() {
