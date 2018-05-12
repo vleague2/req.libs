@@ -21,7 +21,7 @@ SALT_WORK_FACTOR = 12;
 
 // connecting to controllers and assign them to variable
 const storyController = require('./controllers/stories-api-routes.js');
-
+const routes = require('./controllers/routes.js');
 // create the app express
 const app = express()
 
@@ -42,7 +42,8 @@ app.use(bodyParser.urlencoded({ extended: true}));
 app.use(cookieParser());
 
 // use controllers in controller folder
-app.use("/", storyController);
+app.use("/", routes);
+
 
 const port = process.env.PORT || 5000
 
