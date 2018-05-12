@@ -2,7 +2,9 @@ const bcrypt = require('bcryptjs');
 
 module.exports = function (sequelize, DataTypes) {
   var User = sequelize.define("User", {
-
+    googleID: {
+      type: DataTypes.STRING
+    },
     username: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -12,9 +14,9 @@ module.exports = function (sequelize, DataTypes) {
 
     },
     password: {
-      type:DataTypes.STRING,
+      type: DataTypes.STRING,
       allowNull: false,
-      validate:{
+      validate: {
         notEmpty: true
       }
 
@@ -26,7 +28,7 @@ module.exports = function (sequelize, DataTypes) {
         notEmpty: true
       }
     }
-});
+  });
 
   return User;
 };

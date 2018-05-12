@@ -7,6 +7,9 @@ const crypto = require('crypto');
 
 const db = require('../models');
 
+/************************ LOCAL AUTH ROUTES****NO TOUCH***************************** */
+
+
 router.get('/login', (req, res)=>{
     res.render('users/login');
 }); 
@@ -94,5 +97,8 @@ router.post('/login', (req, res, next) =>{
         }
     });
 });
+/********************************************************* */
+
+/*****************GOOGLE AUTH ROUTES************************** */
 
 module.exports = router;
