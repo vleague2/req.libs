@@ -17,12 +17,7 @@ module.exports = function(sequelize, DataTypes) {
      });
 
       VarBlanks.associate = function(models) {
-        // VarBlanks.belongsTo(models.Story);
-        // VarBlanks.belongsTo(models.Story, {
-        //   foreignKey: {
-        //     allowNull: false
-        //   }
-        // });
+        VarBlanks.belongsTo(models.Story);
       };
     return VarBlanks;
   };

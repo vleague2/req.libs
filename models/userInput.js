@@ -10,9 +10,9 @@ module.exports = function(sequelize, DataTypes) {
     });
 
     UserInput.associate = function(models) {
-        UserInput.belongsTo(models.VarBlanks);
-        UserInput.belongsTo(models.Story);
-        UserInput.belongsTo(models.User);
+        // UserInput.belongsTo(models.VarBlanks);
+        // UserInput.belongsTo(models.Story);
+        // UserInput.belongsTo(models.User);
     };
     return UserInput;
   };

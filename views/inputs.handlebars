@@ -4,36 +4,18 @@
             <h1 id="title">Story Title</h1>
         </div>
     </div>
-
-    <form action="/URLHERE" method="POST">
+    <form action="/user-create-story/" method="POST">
         <div class="form-group">
-            <div class="row">
-
-                {{!-- these will be dynamically generated with handlebars, so this will change --}}
-                <div class="col-sm-6 justify-content-center">
-                    <label for="Input1">Noun</label>
-                    <input type="text" class="form-control" id="Input1">
-                    <label for="Input2">Verb</label>
-                    <input type="text" class="form-control" id="Input2">
-                    <label for="Input3">Adjective</label>
-                    <input type="text" class="form-control" id="Input3">
-                </div>
-
-                <div class="col-sm-6 justify-content-center">
-                    <label for="Input4">Verb</label>
-                    <input type="text" class="form-control" id="Input4">
-                    <label for="Input5">Noun</label>
-                    <input type="text" class="form-control" id="Input5">
-                    <label for="Input6">Adverb</label>
-                    <input type="text" class="form-control" id="Input6">
-                </div>
+            <div class="col-sm-6 justify-content-center">
+                {{#each blanks}}
+                    {{> forms/varBlankBlock}}
+                {{/each}}
             </div>
-
             <div class="row mt-5">
                 <div class="col-sm-12 text-center">
                     <button type="submit" class="btn mb-2">See Your Story!</button>
                 </div>
-            </div>
+            </div>  
         </div>
     </form>
 </div>
