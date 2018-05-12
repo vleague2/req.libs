@@ -3,11 +3,15 @@ var db = require("../models");
 module.exports = function(app) {
   // Find all Authors and return them to the user with res.json
   app.get("/api/story", function(req, res) {
-    db.Story.findAll({}).then(function(dbStories) {
-      res.json(dbStories);
-      console.log(dbStories);
-    //   console.log(res);
-    });
+    // db.Story.findAll({}).then(function(dbStories) {
+    //   res.json(dbStories);
+    //   console.log(dbStories);
+    // //   console.log(res);
+    // });
+    db.Story.findAll().then(story => {
+        // projects will be an array of all Project instances
+        console.log(story.dataValues.category);
+      })
   });
 
 //   app.get("/api/stories/:id", function(req, res) {
