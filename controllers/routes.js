@@ -16,9 +16,9 @@ router.post('/login',
   });
 */
    
-// basic get route for home page
+// basic get route for home page & testing handlebars pages
 router.get('/', (req, res) => {
-  res.render("category2");
+  res.render("index");
 })
 
 // export for server
