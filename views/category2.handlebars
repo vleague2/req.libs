@@ -12,8 +12,11 @@
                     Select
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" value="1">Story Name 1</a>
-                    <a class="dropdown-item" value="2">Story Name 2</a>
+                    {{#each stories}}
+                        {{> stories/storyBlock}}
+                    {{/each}}
+                    {{!-- <a class="dropdown-item" value="1">Story Name 1</a>
+                    <a class="dropdown-item" value="2">Story Name 2</a> --}}
                 </div>
             </div>
         </div>
