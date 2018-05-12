@@ -12,6 +12,9 @@ const Sequelize = require ('sequelize');
 const exphbs = require('express-handlebars');
 
 
+
+SALT_WORK_FACTOR = 12;
+
 // THESE ROUTES DON'T EXIST????
 // const routes = require('./routes/index');
 // const users = require('./routes/users');
@@ -37,7 +40,7 @@ app.use(express.static("public"));
 
 //BodyParser Middleware
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({ extended: true}));
 app.use(cookieParser());
 
 // use the routes in the routes folder. we will probably change this to controllers though!!!
