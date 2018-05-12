@@ -1,8 +1,10 @@
 const express = require("express");
 const router = express.Router();
 const db = require("../models");
+const {ensureLoggedIn, guest} = require('../helpers/auth');
 
 // getting page for which catagory the user wants
+// need to add ensureLoggedIn when we want to protect the routes. Syntax: router.get("/", ensureLoggedIn, function ect)
 router.get("/", function(req, res) {
   console.log("fetching objects..");
 
