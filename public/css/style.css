@@ -1,0 +1,35 @@
+#navbar {
+    font-family: 'Luckiest Guy', cursive;
+    background-color: #09814A
+}
+  
+#continue {
+    color: #09814A;
+}
+
+.container {
+    margin-top: 5%;
+    padding: 60px;
+}
+
+#title {
+    color: #313638;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+#sub {
+    font-size: 19px;
+}
+
+#button-row {
+    margin-top: 15px;
+}
+
+button {
+    background-color: #09814A;
+    color: white;
+}
+
+.logo {
+    color: #e8e9eb;
+}

@@ -16,8 +16,13 @@ const exphbs = require('express-handlebars');
 // const routes = require('./routes/index');
 // const users = require('./routes/users');
 
+// this will change a little once we have our controllers organized
+const routes = require('./controllers/routes');
+
 // create the app express
 const app = express()
+
+// require our database models folder, which i think will actually happen in the controller?
 const db = require("./models");
 
 // setting up handlebars~~~~
@@ -29,10 +34,11 @@ app.use(express.static("public"));
 
 //BodyParser Middleware
 app.use(bodyParser.json());
-
-// maybe change this to true?
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
+
+// use the routes in the routes folder. we will probably change this to controllers though!!!
+app.use(routes);
 
 const port = process.env.PORT || 5000
 
