@@ -6,12 +6,23 @@ module.exports = function(sequelize, DataTypes) {
         validate: {
             is: ["^[a-z]+$",'i']
           }
-      }
+        },
+        storyName: {
+          type: DataTypes.STRING,
+          allowNull: false,
+          validate: {
+              is: ["^[a-z]+$",'i']
+            }
+          }
      });
 
       VarBlanks.associate = function(models) {
-        VarBlanks.belongsTo(models.Story);
+        // VarBlanks.belongsTo(models.Story);
+        // VarBlanks.belongsTo(models.Story, {
+        //   foreignKey: {
+        //     allowNull: false
+        //   }
+        // });
       };
-      
     return VarBlanks;
   };

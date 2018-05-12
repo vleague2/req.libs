@@ -25,6 +25,9 @@ const app = express()
 // require our database models folder, which i think will actually happen in the controller?
 const db = require("./models");
 
+
+require("./routes/stories-api-routes")(app);
+
 // setting up handlebars~~~~
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
