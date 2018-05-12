@@ -18,7 +18,7 @@ router.post('/login',
    
 // basic get route for home page
 router.get('/', (req, res) => {
-  res.render("index");
+  res.render("category2");
 })
 
 // export for server
