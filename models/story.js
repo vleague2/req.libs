@@ -1,3 +1,5 @@
+
+// Function that creates table 'Story' with columns 'title, body, cotegory' in database
 module.exports = function(sequelize, DataTypes) {
     var Story = sequelize.define("Story", {
       title: {
