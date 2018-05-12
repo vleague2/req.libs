@@ -15,7 +15,7 @@ router.post('/login',
     res.redirect('/users/' + req.user.username);
   });
 */
-  
+   
 // basic get route for home page
 router.get('/', (req, res) => {
   res.render("index");
