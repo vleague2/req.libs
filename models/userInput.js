@@ -11,8 +11,8 @@ module.exports = function(sequelize, DataTypes) {
       }
     });
 
-       // associating external ids with userInput table
-        UserInput.associate = function(models) {
+    // associating external ids with userInput table
+    UserInput.associate = function(models) {
         UserInput.belongsTo(models.VarBlanks);
         UserInput.belongsTo(models.Story);
         UserInput.belongsTo(models.User);
