@@ -19,8 +19,8 @@ SALT_WORK_FACTOR = 12;
 // const routes = require('./routes/index');
 // const users = require('./routes/users');
 
-// this will change a little once we have our controllers organized
-const routes = require('./routes/routes');
+// connecting to controllers and assign them to variable
+const storyController = require('./controllers/stories-api-routes.js');
 
 // create the app express
 const app = express()
@@ -28,8 +28,6 @@ const app = express()
 // require our database models folder, which i think will actually happen in the controller?
 const db = require("./models");
 
-
-require("./routes/stories-api-routes")(app);
 
 // setting up handlebars~~~~
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
@@ -43,8 +41,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true}));
 app.use(cookieParser());
 
-// use the routes in the routes folder. we will probably change this to controllers though!!!
-app.use(routes);
+// use controllers in controller folder
+app.use("/", storyController);
 
 const port = process.env.PORT || 5000
 

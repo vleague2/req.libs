@@ -12,10 +12,13 @@
                     Select
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" value="hp">Harry Potter</a>
+                    {{#each storys}}
+                        {{> categories/categoryBlock}}
+                    {{/each}}
+                    {{!-- <a class="dropdown-item" value="hp">Harry Potter</a>
                     <a class="dropdown-item" value="got">Game of Thrones</a>
                     <a class="dropdown-item" value="tw">Twilight</a>
-                    <a class="dropdown-item" value="ov">Overwatch</a>
+                    <a class="dropdown-item" value="ov">Overwatch</a> --}}
                 </div>
             </div>
         </div>
