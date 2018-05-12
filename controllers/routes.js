@@ -21,9 +21,9 @@ router.get('/', (req, res) => {
   res.render("category");
 })
 
-router.get('/api/category', (req, res) => {
-  res.render("controller");
-})
+// router.get('/api/category', (req, res) => {
+//   res.render("controller");
+// })
 
 // export for server
 module.exports = router;

@@ -42,7 +42,7 @@ app.use(bodyParser.urlencoded({ extended: true}));
 app.use(cookieParser());
 
 // use controllers in controller folder
-app.use("/", routes);
+app.use("/", storyController);
 
 
 const port = process.env.PORT || 5000
