@@ -11,18 +11,10 @@ const LocalStrategy = require('passport-local').Strategy;
 const Sequelize = require ('sequelize');
 const exphbs = require('express-handlebars');
 
-
-
-SALT_WORK_FACTOR = 12;
-
-// THESE ROUTES DON'T EXIST????
-// const routes = require('./routes/index');
-// const users = require('./routes/users');
-
 // connecting to controllers and assign them to variable
 const storyController = require('./controllers/stories-api-routes.js');
 const routes = require('./controllers/routes.js');
-
+const users = require('./controllers/users.js');
 // create the app express
 const app = express()
 
@@ -43,15 +35,16 @@ app.use(bodyParser.urlencoded({ extended: true}));
 app.use(cookieParser());
 
 // telling the app which controller to use
-app.use("/", storyController);
-
+app.use("/stories", storyController);
+app.use("/", routes);
+app.use("/auth", users);
 
 const port = process.env.PORT || 5000
 
 
 // Create default port to serve the app on
 
-db.sequelize.sync().then(function() {
+db.sequelize.sync({force:true}).then(function() {
     app.listen(port)
     // Log port number
     console.log('Server listening on port: ' + port)
