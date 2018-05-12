@@ -7,9 +7,12 @@ router.get("/", function(req, res) {
   
 db.Story.findAll().then(dbStory => {
   console.log("findAll...");
+  // var hbsObject = JSON.stringify(dbStory);
   // projects will be an array of all Project instances
-  // console.log(res.json(dbStory));
-  res.render("category", dbStory);
+  // res.json((hbsObject));
+  res.render("category", {
+    stories: dbStory
+  });
 })
 });
 

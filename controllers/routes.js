@@ -17,9 +17,9 @@ router.post('/login',
 */
    
 // basic get route for home page & testing handlebars pages
-router.get('/', (req, res) => {
-  res.render("category");
-})
+// router.get('/', (req, res) => {
+//   res.render("category");
+// })
 
 // router.get('/api/category', (req, res) => {
 //   res.render("controller");
