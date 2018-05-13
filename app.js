@@ -13,7 +13,7 @@ const exphbs = require('express-handlebars');
 
 // connecting to controllers and assign them to variable
 const storyController = require('./controllers/stories-api-routes.js');
-const routes = require('./controllers/routes.js');
+const homePage = require('./controllers/homePage.js');
 const users = require('./controllers/users.js');
 // create the app express
 const app = express()
@@ -57,7 +57,7 @@ app.use((req, res, next)=>{
 
 // telling the app which controller to use
 app.use("/stories", storyController);
-app.use("/", routes);
+app.use("/", homePage);
 app.use("/auth", users);
 
 const port = process.env.PORT || 5000
