@@ -8,14 +8,14 @@ module.exports = function(sequelize, DataTypes) {
         validate: {
             is: ["^[a-z]+$",'i']
           }
-        },
-        storyName: {
-          type: DataTypes.STRING,
-          allowNull: false,
-          validate: {
-              is: ["^[a-z]+$",'i']
-            }
-          }
+        }
+        // storyName: {
+        //   type: DataTypes.STRING,
+        //   allowNull: false,
+        //   validate: {
+        //       is: ["^[a-z]+$",'i']
+        //     }
+        //   }
      });
 
       VarBlanks.associate = function(models) {
