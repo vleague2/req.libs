@@ -25,6 +25,10 @@
     margin-top: 15px;
 }
 
+#saved-story {
+    color: #09814A
+}
+
 .loginBtn {
     background-color: #09814A;
     color: white;
