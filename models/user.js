@@ -2,20 +2,21 @@ const bcrypt = require('bcryptjs');
 
 module.exports = function (sequelize, DataTypes) {
   var User = sequelize.define("User", {
-
+    googleId: {
+      type: DataTypes.STRING
+    },
     username: {
       type: DataTypes.STRING,
-      unique: true,
+      allowNull: false,
       validate: {
-        notNull: true,
         notEmpty: true
       }
 
     },
     password: {
-      type:DataTypes.STRING,
-      validate:{
-        notNull:true,
+      type: DataTypes.STRING,
+      allowNull: true,
+      validate: {
         notEmpty: true
       }
 
@@ -23,37 +24,11 @@ module.exports = function (sequelize, DataTypes) {
     email: {
       type: DataTypes.STRING,
       allowNull: false,
-    }
-  },{
-      classMethods: {
-        validPassword: function(password,passwd, done, user){
-            bcrypt.compare(password,passwd,function(err,isMatch){
-              if (err) console.log(err);
-              if (isMatch){
-                return done(null,user)
-              } else{
-                return done(null, false)
-              }
-            })
-        }
+      validate: {
+        notEmpty: true
       }
-    },
-    {
-      dialect:'mysql'
     }
-  
-  );
-
-User.hook('beforeCreate', function (user,fn){
-  let salt = bcrypt.genSalt(SALT_WORK_FACTOR, function(err,salt){
-      return salt
   });
-  bcrypt.hash(user.password,salt, null, function(err, hash){
-    if (err) return next(err)
-    user.password = hash;
-    return fn(null, user)
-  });
-});
 
   return User;
 };

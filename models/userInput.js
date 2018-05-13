@@ -1,3 +1,5 @@
+
+// validation function 
 module.exports = function(sequelize, DataTypes) {
     var UserInput = sequelize.define("UserInput", {
       userInput: {
@@ -9,6 +11,7 @@ module.exports = function(sequelize, DataTypes) {
       }
     });
 
+    // associating external ids with userInput table
     UserInput.associate = function(models) {
         // UserInput.belongsTo(models.VarBlanks);
         // UserInput.belongsTo(models.Story);
