@@ -8,6 +8,11 @@ a:hover {
     padding: 60px;
 }
 
+body {
+    position: relative;
+    margin: 0;
+}
+
 /* Navbar styling */
 #navbar {
     background-color: #09814A
@@ -110,6 +115,11 @@ a:hover {
 /* form labels */
 .label-font {
     font-family: 'Open Sans', sans-serif;
+}
+
+/* input form */
+#input-form {
+    width: 100%;
 }
 
 /* dropdown menus for category & story styling */
