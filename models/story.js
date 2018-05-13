@@ -17,7 +17,6 @@ module.exports = function(sequelize, DataTypes) {
     });
     
     Story.associate = function(models) {
-      // Story.hasMany(models.VarBlanks, {foreignKey: 'title', sourceKey: 'storyName'});
       Story.hasMany(models.VarBlanks, {
         onDelete: "cascade"
       });
