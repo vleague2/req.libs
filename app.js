@@ -65,7 +65,7 @@ const port = process.env.PORT || 5000
 
 // Create default port to serve the app on
 
-db.sequelize.sync({force:true}).then(function() {
+db.sequelize.sync().then(function() {
     app.listen(port)
     // Log port number
     console.log('Server listening on port: ' + port)

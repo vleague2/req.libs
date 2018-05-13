@@ -45,3 +45,21 @@
 .form-control {
     margin-bottom: 15px;
 }
+.form-control {
+    margin-bottom: 15px;
+}
+.midbox {
+    width: 450px;
+}
+.center {
+    text-align: center
+}
+.modal-body {
+height: 600px;
+}
+.modal-img {
+    background-image: url(../img/modalhopeful.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+ }
