@@ -69,6 +69,7 @@ router.get("/userInput/:id", (req, res) => {
 // getting page for user to read story they created
 router.post("/userStory/:id", function(req, res) {
   console.log("posting...");
+  // querying for the story they selected
   db.Story.findOne({
     where: {
       id: req.params.id
@@ -78,48 +79,28 @@ router.post("/userStory/:id", function(req, res) {
     let storyBody = data.body;
     console.log(storyBody);
 
+    //looping over story and replacing instence (***) with the user inputs from the form's array
     for (let i = 0; i < req.body.userInput.length; i++) {
         storyBody = storyBody.replace(/(\*)(\*)(\*)/, function(match, p1) {
-           return req.body.userInput[i];
-          console.log(storyBody);
-           
+           return `<b>${req.body.userInput[i]}</b>`;
         });
     console.log(storyBody);
     };
 
-    // rendering category
-    // res.render("category", {
-      // passing in object "stories" with data
-    //   stories: data
-    // });
+    // saving user's story to db under UserStory
+    db.UserStory.create({
+      title: data.title,
+      body: storyBody
+    }).then(newUserInput => {
+      console.log(`Added successfully`);
+    });
+
+    // rendering story.handlebars with title and story body being pushed in
+    res.render("story", {
+      title: data.title,
+      story: storyBody
+    });
   })
-  // console.log(req.body.userInput);
-  // // looping over the user's inputs
-  // for (i=0;i<req.body.userInput.length;i++) {
-
-  //   // pushing the users's inputs to the db under the userInputs table
-  //   db.UserInput.create({
-  //     userInput: req.body.userInput[i]
-  //   }).then(newUserInput => {
-  //     console.log(`Added successfully`);
-  //   });
-  // }
-
-  // db.UserInput.findAll({
-  //   include: [{
-  //     model: db.Story,
-  //     where: {id: req.params.id}
-  // }]
-  // }).then(data => {
-  //   console.log("findAll...");
-
-  //   // rendering inputs page
-  //   res.render("inputs", {
-
-  //     // passing in object blanks with data      
-  //   blanks: data
-  //   });
-  // })
 
 });
 
