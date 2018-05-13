@@ -1,19 +1,20 @@
  <div class="container">
-    <div class="row">
+    <div class="row mb-4">
         <div class="col-sm-12 text-center">
-            <h1 id="title">Story Title</h1>
+            {{!-- need to figure out how to pull this out of DB --}}
+            <h1 id="title">STORY TITLE GOES HERE</h1>
         </div>
     </div>
     <form action="/stories/userStory/{{storiesId}}" method="POST">
         <div class="form-group">
-            <div class="col-sm-6 justify-content-center">
+            <div class="col-sm-6 offset-sm-3">
                 {{#each blanks}}
                     {{> forms/varBlankBlock}}
                 {{/each}}
             </div>
             <div class="row mt-5">
                 <div class="col-sm-12 text-center">
-                    <button type="submit" class="btn mb-2">See Your Story!</button>
+                    <button type="submit" class="btn mb-2" id="see-story">See Your Story!</button>
                 </div>
             </div>  
         </div>

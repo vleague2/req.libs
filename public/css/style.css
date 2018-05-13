@@ -1,10 +1,6 @@
-#navbar {
-    font-family: 'Luckiest Guy', cursive;
-    background-color: #09814A
-}
-
-#continue {
-    color: #09814A;
+/* global attribute styling */
+a:hover {
+    color: white;
 }
 
 .container {
@@ -12,46 +8,106 @@
     padding: 60px;
 }
 
-#title {
+/* Navbar styling */
+#navbar {
+    background-color: #09814A
+}
+
+.logo {
+    font-family: 'Luckiest Guy', cursive;
+    color: #e8e9eb;
+}
+
+.nav-link {
+    font-family: 'Open Sans', sans-serif;
+    color: #e8e9eb;  
+}
+
+
+/* Footer styling */
+
+.footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #313638;
+    color: #e8e9eb;
+    padding-top: 15px;
+}
+
+#footer-text {
+    font-size: 12px;
+    font-family: 'Open-Sans', sans-serif;
+}
+
+
+/* Titles on every page */
+.title {
     color: #313638;
     font-family: 'Luckiest Guy', cursive;
 }
 
+/* Subtitle on index page */
 #sub {
     font-size: 19px;
+    font-family: 'Open Sans', sans-serif;
 }
 
-#button-row {
-    margin-top: 15px;
+/* Index page buttons */
+.loginBtn {
+    background-color: #09814A;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.loginBtn:hover {
+    background-color: rgb(6, 92, 53);
+}
+
+.registerBtn {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.googleBtn {
+    background-color: #182a51;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+.googleBtn:hover {
+    background-color: #0e1930;
+}
+
+
+/* Buttons on other pages */
+
+#continue {
+    color: #09814A;
 }
 
 #saved-story {
     color: #09814A
 }
 
-.loginBtn {
+#see-story {
     background-color: #09814A;
     color: white;
 }
 
-.googleBtn {
-    background-color: #182a51;
+#button-row {
+    margin-top: 15px;
 }
 
-.googleBtn:hover {
-    background-color: #182a51;
-}
 
-.logo {
-    color: #e8e9eb;
-}
+/* styling the user input page so that the spacing is nice */
 
 .form-control {
     margin-bottom: 15px;
 }
-.form-control {
-    margin-bottom: 15px;
-}
+
+
+
+/* Modal styling */
 .midbox {
     width: 450px;
 }
@@ -61,9 +117,5 @@
 .modal-body {
 height: 600px;
 }
-.modal-img {
-    background-image: url(../img/modalhopeful.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
 
- }
+/*
