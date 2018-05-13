@@ -17,7 +17,7 @@ router.get("/", (req, res) => {
   })
 });
 
-  // getting page for user to select which story they want
+// getting page for user to select which story they want
 router.get("/category/:id", (req, res) => {
     console.log("fetching objects..");
 
@@ -38,10 +38,11 @@ router.get("/category/:id", (req, res) => {
   })
 });
 
+// getting page for user to input blanks based on story they selected
 router.get("/user-input/:id", (req, res) => {
   console.log("fetching objects..");
 
-  // sequelize to query the stories for the drop down menu
+  // sequelize to query the blank inputs for the user to fill in
   db.VarBlanks.findAll({
     include: [{
       model: db.Story,
@@ -50,36 +51,27 @@ router.get("/user-input/:id", (req, res) => {
   }).then(data => {
     console.log("findAll...");
 
-    // rendering category2
+    // rendering inputs page
     res.render("inputs", {
 
-      // passing in object "stories" with data      
+      // passing in object blanks with data      
     blanks: data
     });
   })
 });
 
-  // router.post("/user-create-story/:id", (req, res) =>{
-  //   console.log(req.body);
-  // }).then(data => {
-  //   res.render("category2", {
+// getting page for user to read story they created
+router.post("/user-create-story/", function(req, res) {
+  console.log("posting...");
 
-  //     // passing in object "stories" with data      
-  //     stories: data
-  //   });
-  // });
+  // looping over the user's inputs
+  for (i=0;i<req.body.userInput.length;i++) {
 
-  router.post("/user-create-story/", function(req, res) {
-    console.log("posting...");
-    
-
-    for (i=0;i<req.body.userInput.length;i++) {
-
-      db.UserInput.create({
-        userInput: req.body.userInput[i]
-      }).then(newUserInput => {
-      
-        console.log(`Added successfully`);
+    // pushing the users's inputs to the db under the userInputs table
+    db.UserInput.create({
+      userInput: req.body.userInput[i]
+    }).then(newUserInput => {
+      console.log(`Added successfully`);
   });
 }
 });
