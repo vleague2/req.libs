@@ -2,7 +2,7 @@
     font-family: 'Luckiest Guy', cursive;
     background-color: #09814A
 }
-  
+
 #continue {
     color: #09814A;
 }
@@ -28,6 +28,14 @@
 .loginBtn {
     background-color: #09814A;
     color: white;
+}
+
+.googleBtn {
+    background-color: #182a51;
+}
+
+.googleBtn:hover {
+    background-color: #182a51;
 }
 
 .logo {

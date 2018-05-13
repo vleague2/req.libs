@@ -30,6 +30,7 @@
     "express-validator": "^5.2.0",
     "mysql2": "^1.5.3",
     "passport": "^0.4.0",
+    "passport-google-oauth20": "^1.0.0",
     "passport-http": "^0.3.0",
     "passport-local": "^1.0.0",
     "path": "^0.12.7",
