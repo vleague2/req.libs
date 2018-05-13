@@ -5,7 +5,6 @@ a:hover {
 
 .container {
     margin-top: 5%;
-    /* padding: 30px; */
 }
 
 body {
@@ -95,6 +94,16 @@ html {
     background-color: #09814A;
     color: white;
     font-family: 'Open Sans', sans-serif;
+}
+
+#play-again {
+    background-color: #09814A;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#play-again:hover {
+    background-color: rgb(6, 92, 53);
 }
 
 #continue {
