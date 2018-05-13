@@ -81,23 +81,41 @@ a:hover {
 
 /* Buttons on other pages */
 
+.authentication {
+    background-color: #09814A;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
 #continue {
     color: #09814A;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #saved-story {
-    color: #09814A
+    color: #09814A;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #see-story {
     background-color: #09814A;
     color: white;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #button-row {
     margin-top: 15px;
 }
 
+/* form labels */
+.label-font {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* dropdown menus for category & story styling */
+.dropdown-item {
+    font-family: 'Open Sans', sans-serif;
+}
 
 /* styling the user input page so that the spacing is nice */
 
@@ -115,7 +133,5 @@ a:hover {
     text-align: center
 }
 .modal-body {
-height: 600px;
+    height: 600px;
 }
-
-/*
