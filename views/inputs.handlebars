@@ -6,6 +6,13 @@
         </div>
     </div>
 
+    <div class="row mt-3 mb-5 justify-content-center">
+        <div class="col-sm-10 text-center">
+            <!-- Modal for parts of speech-->
+            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target=".modal">Need help with parts of speech?</button>
+        </div>
+    </div>
+
     <div class="row">
         <form action="/stories/userStory/{{storiesId}}" method="POST" id="input-form">
             <div class="form-group">
@@ -22,4 +29,73 @@
             </div>
         </form>
     </div>
+
+<!-- Modal for parts of speech -->
+<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title">Parts of Speech</h1>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row mb-4 mt-3">
+                    <div class="col-sm-12 text-center">
+                        <h4>Main parts of speech</h4>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <p>A <b>noun</b> is a word that denotes a person, place, or thing. In a sentence, nouns answer the questions who and what.</p>
+                        <ul>
+                            <li>Example 1: The <i>dog</i> ran after the ball.</li>
+                            <li>Example 2: I have an <i>apple</i> for lunch.</li>
+                            <li>Example 3: My living room has a <i>lamp</i>.</li>
+                        </ul>
+                        
+                    </div>
+                    <div class="col-sm-6">
+                        <p>An <b>adjective</b> is a word that modifies, or describes, a noun or pronoun.</p>
+                        <ul>
+                            <li>Example 1: We live in the <i>red</i> brick house.</li>
+                            <li>Example 2: She is <i>tall</i> for her age.</li>
+                            <li>Example 3: A cat’s litter box is <i>stinky</i>.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-sm-6">
+                        <p>A <b>verb</b> is a word that denotes action, or a state of being, in a sentence.</p>
+                        <ul>
+                            <li>Example 1: The cat <i>runs</i> away frequently.</li>
+                            <li>Example 2: I like to <i>eat</i> apples for lunch.</li>
+                            <li>Example 3: My best friend <i>lives</i> far away.</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6">
+                        <p>An <b>adverb</b> is a word that modifies, or further describies, a verb. (Many, though not all, adverbs end in -ly.)</p>
+                        <ul>
+                            <li>Example 1: She usually laughs very <i>loudly</i>.</li>
+                            <li>Example 2: "No, I don't like pasta," he said <i>sadly</i>.</li>
+                            <li>Example 3: We ran across the street very <i>quickly</i>.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
 </div>
+
+
+
+    
+</div>
+
