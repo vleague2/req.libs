@@ -33,8 +33,7 @@ module.exports = {
         category: "Hunger Games",
         createdAt: new Date(),
         updatedAt: new Date()       
-     },
-    
+     },    
    {
     title: "Deserter",
     body: `His father *** off his *** and handed them to Jory Cassel, the captain of his household guard. He took hold of Ice with both *** and said, "In the name of Robert of the House Baratheon, the *** of his Name, King of the Andals and the Rhoynar and the First Men, *** of the Seven Kingdoms and Protector of the Realm, by the word of Eddard of the House Stark, Lord of *** l and Warden of the North, I do sentence you to *** ." He lifted the great sword high above his head.
@@ -80,6 +79,29 @@ module.exports = {
 
   `,
   category: "Star Wars",
+  createdAt: new Date(),
+  updatedAt: new Date()       
+},
+{
+  title: "Dumbledore Speaks",
+
+  body: `I may have made a mistake regarding Harry's *** but I will not 
+
+  repeat it with him. I will give my *** to keep him safe and have 
+
+  placed many *** of protection around him. It is all I can do now. 
+
+  Later there may be time for other things. For Voldemort's power is 
+
+  ***, I feel it in my soul. The pain and guilt I carry is 
+
+  Voldemort ' s fault and the wound it caused may never truly heal. I 
+
+  laugh at something McGonagall is saying but the *** inside lingers 
+
+  as it does every *** night.
+  `,
+  category: "Harry Potter",
   createdAt: new Date(),
   updatedAt: new Date()       
 },
