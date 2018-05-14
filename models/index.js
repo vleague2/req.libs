@@ -10,7 +10,7 @@ if (process.env.JAWSDB_URL) {
 }
 else {
   env = process.env.NODE_ENV || "development"
-};
+}
 
 var config = require(__dirname + "/../config/config.json")[env];
 var db = {};
