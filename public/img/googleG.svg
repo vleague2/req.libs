@@ -19,7 +19,7 @@
         </filter>
         <rect id="path-2" x="5" y="4" width="30" height="30" rx="2"></rect>
     </defs>
-    <g id="Google-Button" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+    <g id="Google-Button" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd" sketch:type="MSPage">
         <g id="9-PATCH" sketch:type="MSArtboardGroup" transform="translate(-668.000000, -160.000000)"></g>
         <g id="btn_google_light_focus" sketch:type="MSArtboardGroup" transform="translate(-1.000000, -1.000000)">
             <rect id="Rectangle-14" fill-opacity="0.3" fill="
