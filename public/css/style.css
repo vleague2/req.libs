@@ -87,6 +87,9 @@ html {
     background-color: #0e1930;
 }
 
+#button-row {
+    margin-top: 15px;
+}
 
 /* Buttons on other pages */
 
@@ -122,9 +125,7 @@ html {
     font-family: 'Open Sans', sans-serif;
 }
 
-#button-row {
-    margin-top: 15px;
-}
+
 
 /* form labels */
 .label-font {
