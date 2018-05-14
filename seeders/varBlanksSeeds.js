@@ -169,8 +169,56 @@ module.exports = {
     createdAt: new Date(),
     updatedAt: new Date()
 
-}
+},
+{
+    varBlanks: "noun ",
+    StoryId: 5,
+    createdAt: new Date(),
+    updatedAt: new Date()
+
+},
+{
+    varBlanks: "noun (plural)",
+   StoryId: 5,
+   createdAt: new Date(),
+   updatedAt: new Date()
     
+},
+{
+   varBlanks: "adjective",
+   StoryId: 5,
+   createdAt: new Date(),
+   updatedAt: new Date()
+   
+},
+{
+   varBlanks: "noun (plural)",
+   StoryId: 5,
+   createdAt: new Date(),
+   updatedAt: new Date()
+   
+},
+{
+   varBlanks: "noun (thing)",
+   StoryId: 5,
+   createdAt: new Date(),
+   updatedAt: new Date()
+   
+},
+{
+   varBlanks: "verb (past tense)",
+   StoryId: 5,
+   createdAt: new Date(),
+   updatedAt: new Date()
+
+},
+{
+   varBlanks: "noun (thing)",
+   StoryId: 5,
+   createdAt: new Date(),
+   updatedAt: new Date()
+
+}
     ], {});
   },
 
