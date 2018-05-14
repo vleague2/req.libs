@@ -16,6 +16,7 @@ const gameController = require('./controllers/game.js');
 const homePage = require('./controllers/homePage.js');
 const users = require('./controllers/users.js');
 const userProfile = require('./controllers/userProfile.js');
+const createMode = require('./controllers/createMode.js');
 
 // create the app express
 const app = express()
@@ -62,6 +63,7 @@ app.use("/start", gameController);
 app.use("/profile", userProfile);
 app.use("/", homePage);
 app.use("/auth", users);
+app.use("/create", createMode)
 
 const port = process.env.PORT || 5000
 
