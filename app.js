@@ -15,6 +15,8 @@ const exphbs = require('express-handlebars');
 const gameController = require('./controllers/game.js');
 const homePage = require('./controllers/homePage.js');
 const users = require('./controllers/users.js');
+const userProfile = require('./controllers/userProfile.js');
+
 // create the app express
 const app = express()
 
@@ -57,6 +59,7 @@ app.use((req, res, next)=>{
 
 // telling the app which controller to use
 app.use("/start", gameController);
+app.use("/profile", userProfile);
 app.use("/", homePage);
 app.use("/auth", users);
 
