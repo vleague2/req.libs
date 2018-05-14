@@ -302,6 +302,54 @@ module.exports = {
      createdAt: new Date(),
      updatedAt: new Date()
   },
+  {
+    varBlanks: "noun",
+    StoryId: 8,
+    createdAt: new Date(),
+    updatedAt: new Date()
+ },
+ {
+     varBlanks: "noun",
+     StoryId: 8,
+     createdAt: new Date(),
+     updatedAt: new Date()
+  },
+  {
+     varBlanks: "verb",
+     StoryId: 8,
+     createdAt: new Date(),
+     updatedAt: new Date()
+  },
+  {
+     varBlanks: "noun",
+     StoryId: 8,
+     createdAt: new Date(),
+     updatedAt: new Date()
+  },
+  {
+     varBlanks: "verb",
+     StoryId: 8,
+     createdAt: new Date(),
+     updatedAt: new Date()
+  },
+  {
+     varBlanks: "noun",
+     StoryId: 8,
+     createdAt: new Date(),
+     updatedAt: new Date()
+  },
+  {
+     varBlanks: "noun",
+     StoryId: 8,
+     createdAt: new Date(),
+     updatedAt: new Date()
+  },
+  {
+     varBlanks: "noun",
+     StoryId: 8,
+     createdAt: new Date(),
+     updatedAt: new Date()
+  },
     ], {});
   },
 
