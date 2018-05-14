@@ -18,6 +18,10 @@ html {
     height: 100%;
 }
 
+.card-header {
+    background-color: white;
+}
+
 /* Navbar styling */
 #navbar {
     background-color: #09814A
@@ -153,6 +157,10 @@ html {
     font-family: 'Open Sans', sans-serif;
 }
 
+/* profile page saved stories container */
+#profile-container {
+    padding-bottom: 80px;
+}
 
 /* i have no idea what this is for */
 #continue {

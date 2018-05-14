@@ -1,10 +1,9 @@
 <div class="col-sm-6">
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">{{this.title}}</h5>
-      <p class="card-text" id="great-story">{{{this.body}}}</p>
-      {{!-- make the link this.id or something so we know which story to delete --}}
-      <a href="/profile/delete/{{this.id}}" class="btn btn-danger">Delete Story</a>
+  <div class="card mb-4">
+    <h5 class="card-header text-center">{{this.title}}</h5>
+    <div class="card-body text-center">
+      <p class="card-text">{{{this.body}}}</p>
+        <a href="/profile/delete/{{this.id}}" class="btn btn-danger">Delete Story</a>    
     </div>
   </div>
 </div>
