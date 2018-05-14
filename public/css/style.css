@@ -61,6 +61,11 @@ html {
     font-family: 'Luckiest Guy', cursive;
 }
 
+/* Title on index page */
+#index-logo {
+    font-size: 50px;
+}
+
 /* Subtitle on index page */
 #sub {
     font-size: 19px;
