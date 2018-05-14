@@ -56,8 +56,72 @@ module.exports = {
         StoryId: 2,
         createdAt: new Date(),
         updatedAt: new Date()
+    
+    },
+    {
+    varBlanks: "past tense verb",
+        StoryId: 3,
+        createdAt: new Date(),
+        updatedAt: new Date()
+     },
+     {
+         varBlanks: "noun plural",
+        StoryId: 3,
+        createdAt: new Date(),
+        updatedAt: new Date()
+         
+
+     },
+     {
+         varBlanks: "noun plural",
+        StoryId: 3,
+        createdAt: new Date(),
+        updatedAt: new Date()
+         
+     },
+     {
+         varBlanks: "adjective",
+        StoryId: 3,
+        createdAt: new Date(),
+        updatedAt: new Date()
+         
+     },
+     {
+        varBlanks: "noun",
+        StoryId: 3,
+        createdAt: new Date(),
+        updatedAt: new Date()
         
+    },
+    {
+        varBlanks: "noun (place)",
+        StoryId: 3,
+        createdAt: new Date(),
+        updatedAt: new Date()
+        
+    },
+    {
+        varBlanks: "verb",
+        StoryId: 3,
+        createdAt: new Date(),
+        updatedAt: new Date()
+        
+    },
+    {
+        varBlanks: "adjective",
+        StoryId: 3,
+        createdAt: new Date(),
+        updatedAt: new Date()
+    
+    },
+    {
+        varBlanks: "noun (animal singular)",
+        StoryId: 3,
+        createdAt: new Date(),
+        updatedAt: new Date()
+    
     }
+    
     ], {});
   },
 
