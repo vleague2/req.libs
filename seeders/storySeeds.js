@@ -105,6 +105,17 @@ module.exports = {
   createdAt: new Date(),
   updatedAt: new Date()       
 },
+{
+  title: "The Accident",
+
+  body: `Naturally, the *** got a police escort to the county hospital. I felt ridiculous the whole time they were *** me. What made it worse was that Edward simply *** through the hospital doors under his own power. I ground my *** together.
+  They put me in the *** room, a long room with a line of beds separated by pastel-pattered curtains. A nurse put a pressure cuff on my arm and a thermometer under my ***. When the nurse walked away, I quickly unfastened the *** and threw it under the bed
+  .
+  `,
+  category: "Twilight",
+  createdAt: new Date(),
+  updatedAt: new Date()       
+},
 
     ], {});
   },
