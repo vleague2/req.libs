@@ -3,7 +3,7 @@ const router = express.Router();
 const db = require("../models");
 const {ensureLoggedIn, guest} = require('../helpers/auth');
 
-router.get("/:username", function(req, res) {
+router.get("/:username",ensureLoggedIn, function(req, res) {
     console.log("fetching objects..");
     // sequelize to query the all previous stories
     db.UserStory.findAll({
@@ -21,7 +21,7 @@ router.get("/:username", function(req, res) {
 });
 
 // getting route to delete past saved story
-router.get("/delete/:username/:id", function(req, res) {
+router.get("/delete/:username/:id", ensureLoggedIn, function(req, res) {
     console.log("finding object to delete..");
     db.UserStory.destroy({
       where: {
