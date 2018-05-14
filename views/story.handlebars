@@ -5,32 +5,29 @@
         </div>
     </div>
 
-    <div class="row justify-content-center">
-        <div class="col-sm-10 col-lg-5 justify-content-center">
-                <p class="justify-content-center text-center ">
+    <div class="row justify-content-center mt-4 mb-3">
+        <div class="col-sm-8">
+                <p class="text-center">
                     {{{story}}}
 
                 </p>
         </div>
     </div>
 
-    <div class="row">
+    <div class="row mt-5 mb-5">
         <div class="col-sm-12 text-center">
             <p id="saved-story"><i class="far fa-check-circle"></i> Story saved automatically! </p> 
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-sm-6 text-center">
-            <a href="/" class="btn btn-success">Play again</a>
-        </div>
-
-        <div class="col-sm-6 text-center">
+    <div class="row text-center justify-content-center">
+        <div class="col-sm-8">
+            {{!-- should redirect to category chooser which it does not right now --}}
+            <a href="/" class="btn mr-2" id="play-again">Play again</a>
             {{!-- url for savedstories here --}}
-            <a href="#" class="btn btn-info">View Saved Stories</a>
+            <a href="#" class="btn btn-info ml-2 label-font">View Saved Stories</a>
         </div>
     </div>
-
 </div>
 
 

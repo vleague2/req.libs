@@ -6,18 +6,20 @@
         </div>
     </div>
 
-    <form action="/stories/userStory/{{storiesId}}" method="POST">
-        <div class="form-group">
-            <div class="col-sm-6 offset-sm-3">
-                {{#each blanks}}
-                    {{> forms/varBlankBlock}}
-                {{/each}}
-            </div>
-            <div class="row mt-5">
-                <div class="col-sm-12 text-center">
-                    <button type="submit" class="btn mb-2" id="see-story">See Your Story!</button>
+    <div class="row">
+        <form action="/stories/userStory/{{storiesId}}" method="POST" id="input-form">
+            <div class="form-group">
+                <div class="col-sm-6 offset-sm-3 text-center">
+                    {{#each blanks}}
+                        {{> forms/varBlankBlock}}
+                    {{/each}}
                 </div>
-            </div>  
-        </div>
-    </form>
+                <div class="row mt-5 mb-5">
+                    <div class="col-sm-12 text-center">
+                        <button type="submit" class="btn mb-5" id="see-story">See Your Story!</button>
+                    </div>
+                </div>  
+            </div>
+        </form>
+    </div>
 </div>

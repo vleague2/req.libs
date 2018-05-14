@@ -5,7 +5,16 @@ a:hover {
 
 .container {
     margin-top: 5%;
-    padding: 60px;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    min-height: 100%;
+}
+
+html {
+    height: 100%;
 }
 
 /* Navbar styling */
@@ -78,6 +87,9 @@ a:hover {
     background-color: #0e1930;
 }
 
+#button-row {
+    margin-top: 15px;
+}
 
 /* Buttons on other pages */
 
@@ -87,14 +99,14 @@ a:hover {
     font-family: 'Open Sans', sans-serif;
 }
 
-#continue {
-    color: #09814A;
+#play-again {
+    background-color: #09814A;
+    color: white;
     font-family: 'Open Sans', sans-serif;
 }
 
-#saved-story {
-    color: #09814A;
-    font-family: 'Open Sans', sans-serif;
+#play-again:hover {
+    background-color: rgb(6, 92, 53);
 }
 
 #see-story {
@@ -103,13 +115,20 @@ a:hover {
     font-family: 'Open Sans', sans-serif;
 }
 
-#button-row {
-    margin-top: 15px;
+.btn-danger {
+    font-family: 'Open Sans', sans-serif;
 }
+
+
 
 /* form labels */
 .label-font {
     font-family: 'Open Sans', sans-serif;
+}
+
+/* input form */
+#input-form {
+    width: 100%;
 }
 
 /* dropdown menus for category & story styling */
@@ -123,7 +142,11 @@ a:hover {
     margin-bottom: 15px;
 }
 
-
+/* styling for the notification that the story's been saved */
+#saved-story {
+    color: #09814A;
+    font-family: 'Open Sans', sans-serif;
+}
 
 /* Modal styling */
 .midbox {
@@ -134,4 +157,11 @@ a:hover {
 }
 .modal-body {
     height: 600px;
+}
+
+
+/* i have no idea what this is for */
+#continue {
+    color: #09814A;
+    font-family: 'Open Sans', sans-serif;
 }
