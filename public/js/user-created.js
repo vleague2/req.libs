@@ -72,6 +72,7 @@ $("#submit-story").click( function (){
         success: function (data) {
             console.log('i sent the data')
             console.log(data);
+            $("#append-to").append("<p class='saved-story'><i class='far fa-check-circle'></i> Story saved!</p>")
         }
     });
 
