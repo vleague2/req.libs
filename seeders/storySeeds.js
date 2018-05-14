@@ -59,7 +59,30 @@ module.exports = {
   category: "Game of Thrones",
   createdAt: new Date(),
   updatedAt: new Date()       
-}
+},
+{
+  title: "A New Hope",
+  body: `A long time ago, in a *** far, far, away...
+
+  It is a period of civil war. Rebel  ***, 
+  striking from a hidden base, have won their first 
+  victory against the *** Galactic Empire.
+
+  During the battle, Rebel *** managed to steal 
+  secret plans to the Empire's ultimate weapon, the 
+  Death Star, an armored *** with enough 
+  power to destroy an entire planet.
+
+*** by the Empire's sinister agents, Princess 
+  Leia races home aboard her ***, custodian of 
+  the stolen plans that can save her people and 
+  restore freedom to the galaxy ...
+
+  `,
+  category: "Star Wars",
+  createdAt: new Date(),
+  updatedAt: new Date()       
+},
 
     ], {});
   },
