@@ -11,5 +11,9 @@ module.exports = function(sequelize, DataTypes) {
         allowNull: false
       }
      });
+
+     VarBlanks.associate = function(models) {
+      VarBlanks.belongsTo(models.Story);
+      };
     return VarBlanks;
   };
