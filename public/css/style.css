@@ -148,20 +148,13 @@ html {
     font-family: 'Open Sans', sans-serif;
 }
 
-/* Modal styling */
-.midbox {
-    width: 450px;
-}
-.center {
-    text-align: center
-}
-.modal-body {
-    height: 600px;
-}
-
 
 /* i have no idea what this is for */
 #continue {
     color: #09814A;
     font-family: 'Open Sans', sans-serif;
+}
+
+.midbox {
+    width: 450px;
 }
