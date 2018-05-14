@@ -83,7 +83,7 @@ module.exports = {
   updatedAt: new Date()       
 },
 {
-  title: "Dumbledore Speaks",
+  title: "Dumbledore's Monologue",
 
   body: `I may have made a mistake regarding Harry's *** but I will not 
 
@@ -102,6 +102,36 @@ module.exports = {
   as it does every *** night.
   `,
   category: "Harry Potter",
+  createdAt: new Date(),
+  updatedAt: new Date()       
+},
+
+
+
+
+
+
+
+
+
+
+
+{
+  title: "Yoda Speaks",
+
+  body: `Size matters not. Look at me. Judge me by my ***, do you? 
+  
+  Hmm? Hmm. And well you should not. For my ally is the ***, and a powerful 
+  
+  ally it is. Life creates it, makes it ***. Its *** surrounds us and binds us. 
+  
+  Luminous beings are we, not this crude matter. You must *** the Force around 
+  
+  you; between you, me, the tree, the ***, everywhere. Yes, even between
+  
+  the *** and the ***.
+  `,
+  category: "Star Wars",
   createdAt: new Date(),
   updatedAt: new Date()       
 },
