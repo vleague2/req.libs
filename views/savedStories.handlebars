@@ -1,39 +1,33 @@
-
 <div class="container">
 
+  <div class="row">
+      <div class="col-sm-12 text-center">
+          <h1 class="title">Saved Stories</h1>
+      </div>
+  </div>
 
-<div class="row">
-    <div class="col-sm-12 text-center">
-        <h1 class="title">Saved Stories</h1>
+  <div class="row">
+    {{!-- probably handlebars each loop here --}}
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"> Star Wars </h5>
+          <p class="card-text" id ="great-story">With supporting text below as a natural lead-in to additional content. content about some stuff, good words best story ever, bruh.</p>
+          {{!-- make the link this.id or something so we know which story to delete --}}
+          <a href="LINK" class="btn btn-danger">Delete Story</a>
+        </div>
+      </div>
     </div>
-</div>
 
-
-
-<div class="row">
-  {{!-- probably handlebars each loop here --}}
-  <div class="col-sm-6">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title"> Star Wars </h5>
-        <p class="card-text" id = 'great-story'>With supporting text below as a natural lead-in to additional content. content about some stuff, good words best story ever, bruh.
-        </p>
-        {{!-- make the link this.id or something so we know which story to delete --}}
-        <a href="LINK" class="btn btn-danger">Delete Story</a>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Malfunction</h5>
+          <p class="card-text" id="good-story">With supporting text below as a natural lead-in to additional content. words that i write, straight on the page. some random crap right here. I can do it all. Don't belive me just watch. </p>
+          {{!-- make the link this.id or something so we know which story to delete --}}
+          <a href="LINK" class="btn btn-danger">Delete Story</a>
+        </div>
       </div>
     </div>
   </div>
-  <div class="col-sm-6">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Malfunction</h5>
-        <p class="card-text" id = 'good-story'>With supporting text below as a natural lead-in to additional content. words that i write, straight on the page. some random crap right here. I can do it all. Don't belive me just watch.
-        </p>
-        {{!-- make the link this.id or something so we know which story to delete --}}
-        <a href="LINK" class="btn btn-danger">Delete Story</a>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
 </div>

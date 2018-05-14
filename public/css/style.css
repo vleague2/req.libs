@@ -109,19 +109,13 @@ html {
     background-color: rgb(6, 92, 53);
 }
 
-#continue {
-    color: #09814A;
-    font-family: 'Open Sans', sans-serif;
-}
-
-#saved-story {
-    color: #09814A;
-    font-family: 'Open Sans', sans-serif;
-}
-
 #see-story {
     background-color: #09814A;
     color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.btn-danger {
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -148,7 +142,11 @@ html {
     margin-bottom: 15px;
 }
 
-
+/* styling for the notification that the story's been saved */
+#saved-story {
+    color: #09814A;
+    font-family: 'Open Sans', sans-serif;
+}
 
 /* Modal styling */
 .midbox {
@@ -159,4 +157,11 @@ html {
 }
 .modal-body {
     height: 600px;
+}
+
+
+/* i have no idea what this is for */
+#continue {
+    color: #09814A;
+    font-family: 'Open Sans', sans-serif;
 }
