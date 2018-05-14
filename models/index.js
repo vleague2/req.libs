@@ -6,7 +6,7 @@ var Sequelize = require("sequelize");
 var basename = path.basename(__filename);
 var env;
 if (process.env.JAWSDB_URL) {
-  env = process.env.NODE_ENV || "production";
+  env = process.env.JAWSDB_URL || "production";
 }
 else {
   env = process.env.NODE_ENV || "development"
