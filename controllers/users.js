@@ -110,7 +110,8 @@ router.get('/google', passport.authenticate('google', {
 router.get('/google/callback', passport.authenticate('google', {
     failureRedirect: '/'
 }), (req, res) => {
-    res.redirect('/stories');
+    let username = res.req.user.dataValues.username;
+    res.redirect(`/profile/${username}`);
 });
 
 module.exports = router;
