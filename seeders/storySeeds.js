@@ -36,7 +36,7 @@ module.exports = {
      },
     
    {
-    title: "Wolves",
+    title: "Deserter",
     body: `His father *** off his *** and handed them to Jory Cassel, the captain of his household guard. He took hold of Ice with both *** and said, "In the name of Robert of the House Baratheon, the *** of his Name, King of the Andals and the Rhoynar and the First Men, *** of the Seven Kingdoms and Protector of the Realm, by the word of Eddard of the House Stark, Lord of *** l and Warden of the North, I do sentence you to *** ." He lifted the great sword high above his head.
 
     Bran's *** brother Jon Snow moved closer. "Keep the *** well in hand," he whispered. "And don't look away. Father will know if you do."
