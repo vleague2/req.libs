@@ -45,15 +45,21 @@ $("#submit-story").click( function (){
 
     console.log('i am working');
 
-    let username = $("#username").val();
+    let username = $("#username").data("id");
 
     console.log(username);
+
+    let title = $("#story-title").val();
+
+    let category = $("#story-category").val();
     
 
     data = {
         story: wholeStory,
         speech: partOfSpeechArr,
-        username: username
+        username: username,
+        category: category,
+        title: title
     }
 
  
