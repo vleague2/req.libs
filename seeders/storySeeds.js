@@ -3,13 +3,13 @@
 module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.bulkInsert('Stories', [{
-        title: "Story 1",
+        title: "Mysterious Moment",
         body: "The door opened again, and the cold *** suddenly gusted through the room, rustling the *** on the desk, swirling my hair around my ***. The girl who came in merely *** to the desk, placed a note in the wire basket, and *** again. But Edward Cullen’s *** stiffened, and he turned slowly to *** at me – his face was absurdly *** – with piercing, noun-filled eyes. For an instant, I felt a thrill of genuine ***, raising the hair on my ***. The look only lasted a second, but it chilled me more than the freezing ***.",
         category: "Twilight",
          createdAt: new Date(),
         updatedAt: new Date()
      }, {
-        title: "Story 1",
+        title: "Katniss Wakes Up",
         body: `*** means fame and fortune.
 
         Losing means *** death. I guess
@@ -105,6 +105,7 @@ module.exports = {
   createdAt: new Date(),
   updatedAt: new Date()       
 },
+
 {
   title: "The Accident",
 
@@ -134,6 +135,25 @@ module.exports = {
   category: "Star Wars",
   createdAt: new Date(),
   updatedAt: new Date()       
+},
+{
+  title: "A Forest Encounter",
+
+  body: `"I knew it," Hagrid murmured. "There's something in here that shouldn't be."
+
+  "A ***?" Harry suggested.
+  
+  "That wasn't no werewolf and it wasn't no ***, neither," said Hagrid ***. "Right, follow me, but careful, now."
+  
+  They *** more slowly, *** straining for the faintest sound. Suddenly, in a clearing ahead, something definitely ***.
+  
+  "Who's there?" Hagrid called. "Show yourself -- I'm ***!"
+  
+  And into the clearing came ---- was it a man, or a ***? To the waist, a man, with *** hair and beard, but below that was a ***’s gleaming chestnut body with a ***, reddish tail. Harry and Hermione's jaws ***.
+  `,
+  category: "Harry Potter",
+  createdAt: new Date(),
+  updatedAt: new Date()
 },
     ], {});
   },
