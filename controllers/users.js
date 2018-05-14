@@ -89,8 +89,9 @@ router.post('/login', (req, res, next) => {
         let userId = user.dataValues.id;
         if (user) {
             // calling passport authenticate method
+            console.log('redirecting user..');
             passport.authenticate('local', {
-                successRedirect: "/stories",
+                successRedirect: `/profile/${req.body.userName.toLowerCase()}`,
                 failureRedirect: "/auth/login",
                 failureFlash: "Invalid username or password",
                 successFlash: `Welcome ${user.dataValues.username}`

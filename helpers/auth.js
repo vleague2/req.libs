@@ -8,7 +8,7 @@ module.exports = {
     },
     guest: function (req,res,next){
         if (req.isAuthenticated()){
-            res.redirect('/stories')
+            res.redirect('/profile')
         }else {
             return next();
         }
