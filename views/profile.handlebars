@@ -1,0 +1,35 @@
+<div class="container">
+
+  <div class="row mt-4">
+    <div class="col-sm-12 text-center">
+        <h1 class="title">Profile</h1>
+    </div>
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="col-sm-6 text-center">
+      {{!-- pull username from DB --}}
+      {{!-- <p class="label-font"><b>Username:</b></p> --}}
+    </div>
+  </div>  
+
+  <div class="row justify-content-center">
+    <div class="col-sm-6 text-center">
+      {{!-- play new game --}}
+      <a href="/start/" class="title btn" id="play-again">Start a New Game</a>
+    </div>
+  </div>  
+
+  <div class="row mt-5">
+    <div class="col-sm-12 text-center">
+        <h3 class="title">Saved Stories</h3>
+    </div>
+  </div>
+
+  <div class="row">
+    {{!-- probably handlebars each loop here --}}
+    {{#each stories}}
+      {{> profile/storyBlock}}
+    {{/each}}
+  </div>
+</div>
