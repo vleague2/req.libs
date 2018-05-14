@@ -350,6 +350,78 @@ module.exports = {
      createdAt: new Date(),
      updatedAt: new Date()
   },
+  {
+    varBlanks: "animal",
+    StoryId: 9,
+    createdAt: new Date(),
+    updatedAt: new Date()
+  },
+  {
+    varBlanks: "animal",
+    StoryId: 9,
+    createdAt: new Date(),
+    updatedAt: new Date()
+  },
+  {
+    varBlanks: "adverb",
+    StoryId: 9,
+    createdAt: new Date(),
+    updatedAt: new Date()
+  },
+  {
+    varBlanks: "verb (past tense)",
+    StoryId: 9,
+    createdAt: new Date(),
+    updatedAt: new Date()
+  },
+  {
+    varBlanks: "body part (plural)",
+    StoryId: 9,
+    createdAt: new Date(),
+    updatedAt: new Date()
+  },
+  {
+    varBlanks: "verb (past tense)",
+    StoryId: 9,
+    createdAt: new Date(),
+    updatedAt: new Date()
+  },
+  {
+    varBlanks: "adjective",
+    StoryId: 9,
+    createdAt: new Date(),
+    updatedAt: new Date()
+  },
+  {
+    varBlanks: "animal",
+    StoryId: 9,
+    createdAt: new Date(),
+    updatedAt: new Date()
+  },
+  {
+    varBlanks: "adjective",
+    StoryId: 9,
+    createdAt: new Date(),
+    updatedAt: new Date()
+  },
+  {
+    varBlanks: "animal",
+    StoryId: 9,
+    createdAt: new Date(),
+    updatedAt: new Date()
+  },
+  {
+    varBlanks: "adjective",
+    StoryId: 9,
+    createdAt: new Date(),
+    updatedAt: new Date()
+  },
+  {
+    varBlanks: "verb (past tense)",
+    StoryId: 9,
+    createdAt: new Date(),
+    updatedAt: new Date()
+  },
     ], {});
   },
 
