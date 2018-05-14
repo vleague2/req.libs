@@ -44,16 +44,23 @@ function replacer() {
 $("#submit-story").click( function (){
 
     console.log('i am working');
+
+    let username = $("#username").val();
+
+    console.log(username);
+    
+
     data = {
         story: wholeStory,
-        speech: partOfSpeechArr
+        speech: partOfSpeechArr,
+        username: username
     }
 
-
+ 
     $.ajax({
         load: console.log(data),
         type: 'POST',
-        url: 'http://localhost:5000/api/JSON',
+        url: '/create/' + username,
         data: data,
 
         success: function (data) {
