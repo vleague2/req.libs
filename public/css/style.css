@@ -148,6 +148,11 @@ html {
     padding-bottom: 80px;
 }
 
+/* style for the username on the profile */
+#profile-username {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
 
 /* i have no idea what this is for */
 #continue {
