@@ -22,6 +22,7 @@ html {
     background-color: white;
 }
 
+
 /* Navbar styling */
 #navbar {
     background-color: #09814A
@@ -61,24 +62,33 @@ html {
     font-family: 'Luckiest Guy', cursive;
 }
 
+
+/* Title on index page */
+#index-logo {
+    font-size: 50px;
+}
+
+
 /* Subtitle on index page */
 #sub {
     font-size: 19px;
     font-family: 'Open Sans', sans-serif;
 }
 
-/* Index page buttons */
-.loginBtn {
+
+/* Buttons */
+
+.greenBtn {
     background-color: #09814A;
     color: white;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif; 
 }
 
-.loginBtn:hover {
+.greenBtn:hover {
     background-color: rgb(6, 92, 53);
 }
 
-.registerBtn {
+.btn-font {
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -96,54 +106,24 @@ html {
     margin-top: 15px;
 }
 
-/* Buttons on other pages */
-
-.authentication {
-    background-color: #09814A;
-    color: white;
-    font-family: 'Open Sans', sans-serif;
-}
-
-#play-again {
-    background-color: #09814A;
-    color: white;
-    font-family: 'Open Sans', sans-serif;
-}
-
-#play-again:hover {
-    background-color: rgb(6, 92, 53);
-}
-
-#see-story {
-    background-color: #09814A;
-    color: white;
-    font-family: 'Open Sans', sans-serif;
-}
-
-.btn-danger {
-    font-family: 'Open Sans', sans-serif;
-}
-
-.dropdown-toggle {
-    background-color: #09814A;
-    color: white;
-    font-family: 'Open Sans', sans-serif;
-}
 
 /* form labels */
 .label-font {
     font-family: 'Open Sans', sans-serif;
 }
 
+
 /* input form */
 #input-form {
     width: 100%;
 }
 
+
 /* dropdown menus for category & story styling */
 .dropdown-item {
     font-family: 'Open Sans', sans-serif;
 }
+
 
 /* styling the user input page so that the spacing is nice */
 
@@ -151,16 +131,19 @@ html {
     margin-bottom: 15px;
 }
 
+
 /* styling for the notification that the story's been saved */
 #saved-story {
     color: #09814A;
     font-family: 'Open Sans', sans-serif;
 }
 
+
 /* profile page saved stories container */
 #profile-container {
     padding-bottom: 80px;
 }
+
 
 /* i have no idea what this is for */
 #continue {
