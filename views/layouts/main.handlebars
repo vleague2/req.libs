@@ -15,12 +15,12 @@
 	</head>
 	<body>
     <nav id="navbar" class="navbar navbar-expand">
-      <a class="navbar-brand logo" href="/">Lil <i class="far fa-comments"></i> Libs</a>
+      <a class="navbar-brand logo" href="/profile/{{username}}">Lil <i class="far fa-comments"></i> Libs</a>
       <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ml-auto">
       {{#if user}}
       <li class="nav-item">
-        <a class="nav-link" href="/stories"><b>Home</b></a>
+        <a class="nav-link" href="/profile/{{username}}"><b>Home</b></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/auth/logout"><b>Logout</b></a>
