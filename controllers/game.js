@@ -67,7 +67,7 @@ router.get("/userInput/:id", (req, res) => {
 });
 
 // getting page for user to read story they created
-router.post("/userStory/:id", function(req, res) {
+router.post("/user-story/:id", function(req, res) {
   console.log("posting...");
   // querying for the story they selected
   db.Story.findOne({

@@ -12,7 +12,7 @@ const Sequelize = require ('sequelize');
 const exphbs = require('express-handlebars');
 
 // connecting to controllers and assign them to variable
-const storyController = require('./controllers/stories-api-routes.js');
+const gameController = require('./controllers/game.js');
 const homePage = require('./controllers/homePage.js');
 const users = require('./controllers/users.js');
 // create the app express
@@ -56,7 +56,7 @@ app.use((req, res, next)=>{
 
 
 // telling the app which controller to use
-app.use("/stories", storyController);
+app.use("/start", gameController);
 app.use("/", homePage);
 app.use("/auth", users);
 
