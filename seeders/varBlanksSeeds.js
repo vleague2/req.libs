@@ -257,6 +257,51 @@ module.exports = {
     createdAt: new Date(),
     updatedAt: new Date()
  },
+ {
+    varBlanks: "noun (thing)",
+    StoryId: 7,
+    createdAt: new Date(),
+    updatedAt: new Date()
+ 
+ },
+ {
+     varBlanks: "verb (ending in ing)",
+     StoryId: 7,
+     createdAt: new Date(),
+     updatedAt: new Date()
+  
+  },
+  {
+     varBlanks: "verb (past tense)",
+     StoryId: 7,
+     createdAt: new Date(),
+     updatedAt: new Date()
+  
+  },
+  {
+     varBlanks: "noun (plural)",
+     StoryId: 7,
+     createdAt: new Date(),
+     updatedAt: new Date()
+  },
+  {
+     varBlanks: "adjective",
+     StoryId: 7,
+     createdAt: new Date(),
+     updatedAt: new Date()
+  },
+  {
+     varBlanks: "noun",
+     StoryId: 7,
+     createdAt: new Date(),
+     updatedAt: new Date()
+  },
+  {
+     varBlanks: "noun",
+     StoryId: 7,
+     createdAt: new Date(),
+     updatedAt: new Date()
+  },
     ], {});
   },
 
