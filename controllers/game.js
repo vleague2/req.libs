@@ -45,7 +45,14 @@ router.get("/category/:id", (req, res) => {
 // getting page for user to input blanks based on story they selected
 router.get("/userInput/:id", (req, res) => {
   console.log("fetching objects..");
-
+  let storyName = ""
+  db.Story.findOne({
+    where: {
+      id: req.params.id
+    }
+  }).then(data => {
+    storyName = data.title
+  })
   // sequelize to query the blank inputs for the user to fill in
   db.VarBlanks.findAll({
     include: [{
@@ -54,14 +61,15 @@ router.get("/userInput/:id", (req, res) => {
   }]
   }).then(data => {
     console.log("findAll...");
-
     // rendering inputs page
     res.render("inputs", {
 
       // passing in object blanks with data    
     storiesId: req.params.id,  
-    blanks: data
+    blanks: data,
+    storyName: storyName
     });
+    
     // res.json(data);
   })
 });

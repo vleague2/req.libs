@@ -5,13 +5,13 @@ const {ensureLoggedIn, guest} = require('../helpers/auth');
 
 router.get("/", function(req, res) {
     console.log("fetching objects..");
-    // sequelize to query the categories for the drop down menu
+    // sequelize to query the all previous stories
     db.UserStory.findAll({
 
     }).then(data => {
       console.log("finding all saved user stories..");
 
-      // rendering category
+      // rendering profile
       res.render("profile", {
         // passing in object "stories" with data
         stories: data
@@ -19,6 +19,7 @@ router.get("/", function(req, res) {
     })
 });
 
+// getting route to delete past saved story
 router.get("/delete/:id", function(req, res) {
     console.log("finding object to delete..");
     db.UserStory.destroy({
