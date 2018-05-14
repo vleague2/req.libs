@@ -9,6 +9,10 @@ module.exports = function(sequelize, DataTypes) {
       body: {
         type: DataTypes.TEXT,
         allowNull: false
+      },
+      username: {
+        type: DataTypes.STRING,
+        allowNull: false
       }
     });
 
