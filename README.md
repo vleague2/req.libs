@@ -1,12 +1,13 @@
 
 # Req.libs
 This is a *Mad Libs* inspired game in which the user picks from one of several categories. The user
-is then prompted for verbs, nouns, adverbs, etc. per needed within the story. The paragraph is then combined with the user's input and a story is shown to the user. This project's purpose was to, as a team, create a full stack application complete with an express router, a database, and polished UI.
+is then prompted for verbs, nouns, adverbs, etc. per needed within the story. The paragraph is then combined with the user's input and a story is shown to the user. Stories are saved automatically to the user's profile. The user also has the option to add their own story to the database.
+
+This project's purpose was to, as a team, create a full stack application complete with an express router, a database, and polished UI.
 
 ## Getting Started
 
-
-click on the link below to play the game.
+Click on the link below to play the game.
 
  ![image](public/img/titlePage.png)
 
@@ -14,16 +15,14 @@ https://req-libs.herokuapp.com/
 
 ## Technologies Used
 
-
-* Handlebars - To more easily loop through data
+* Handlebars - To display data to the client
 * mySQL Workbench - primary sql gui used
-* Sequalize - Simply mySQL seeding and queries
-* Node.js - routing
+* Sequelize - mySQL seeding and queries
+* Node.js - server & logic
+* Express.js - routing
 * Client-side Javascript - To capture and send user input from front end to backend
 * Passport - Used to create a local and google Oauth login
 * Bcrypt - To hash passwords
-
-
 
 
  ## Authors
@@ -34,11 +33,8 @@ https://req-libs.herokuapp.com/
 * [Alex Trilling](https://github.com/Atrill90) - Authentication 
 
 
-
-## The Future of this project
-If we were to do a version 2, we would love to inclued a multiplayer feature in which stories could be compared and friends could upvote which was the best story. Another multiplayer idea was for friends to take turns filling in blanks on the same story and see what came up. Other future versions may include to limit the visisbility of your user made stories.
-
-
+## The Future of this Project
+If we were to do a version 2, we would love to include a multiplayer feature in which stories could be compared and friends could upvote which was the best story. Another multiplayer idea was for friends to take turns filling in blanks on the same story and see what came up. Other future versions may include the ability to limit the visisbility of your user-made stories.
 
 
 ## Acknowledgments
