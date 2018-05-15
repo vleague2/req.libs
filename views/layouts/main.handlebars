@@ -3,52 +3,73 @@
 <head>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--GOOGLE FONTS-->
     <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Open+Sans" rel="stylesheet">
+    <!--BOOTSTRAP CSS-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!--FONT AWESOME ICONS-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+    <!--CUSTOM CSS-->
     <link rel="stylesheet" href="/css/style.css">
+    <!--PAGE TITLE-->
     <title>Lil Libs</title>
-  </head>
-	</head>
+</head>
+
 	<body>
+
+    <!--navbar code-->
     <nav id="navbar" class="navbar navbar-expand">
+
+      <!--navbar logo on the left-->
       <a class="navbar-brand logo" href="/profile/{{username}}">Lil <i class="far fa-comments"></i> Libs</a>
+      
       <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav ml-auto">
-      {{#if user}}
-      <li class="nav-item">
-        <a class="nav-link" href="/profile/{{username}}"><b>Home</b></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/auth/logout"><b>Logout</b></a>
-      </li>
-      {{else}}
-      <li class="nav-item">
-        <a class="nav-link" href="/"><b>Home</b></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/auth/login"><b>Login</b></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/auth/register"><b>Register</b></a>
-      </li>
-      {{/if}}
-    </ul>
-  </div>
+
+        <!--navbar items on the right-->
+        <ul class="navbar-nav ml-auto">
+
+          <!--if user is logged in-->
+          {{#if user}}
+            <li class="nav-item">
+              <a class="nav-link" href="/profile/{{username}}"><b>Home</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/auth/logout"><b>Logout</b></a>
+            </li>
+
+          <!--otherwise show these items-->
+          {{else}}
+            <li class="nav-item">
+              <a class="nav-link" href="/"><b>Home</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/auth/login"><b>Login</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/auth/register"><b>Register</b></a>
+            </li>
+          {{/if}}
+        </ul>
+      </div>
     </nav>
 
+    <!--handlebars files will insert here-->
 		{{{ body }}}
 
-
+  <!--page footer-->
   <footer class="footer">
-        <p id="footer-text" class="text-center"> © Code Beans 2018 </p>
+    <p id="footer-text" class="text-center"> © Code Beans 2018 </p>
   </footer>
 
+
+  <!--JQUERY-->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <!--POPPER JS FOR BOOTSTRAP-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <!--BOOTSTRAP JAVASCRIPT-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!--CUSTOM JAVASCRIPT-->
+  <script type="text/javascript" src="/js/user-created.js"></script>
   
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> <!-- link to jQuery library -->
-    <script type="text/javascript" src="/js/user-created.js"></script>
 	</body>
 </html>

@@ -1,18 +1,22 @@
+<!--container to hold page content-->
 <div class="container">
+
+    <!--row to hold page title-->
     <div class="row mt-5 pt-5">
         <div class="col-sm-12 text-center">
             <h1 class="title">Choose a Category</h1>
         </div>
     </div>
 
-    <div class="row" id="button-row">
+    <!--row to hold the choose category dropdown-->
+    <div class="row button-row">
         <div class="col-sm-12 justify-content-center text-center">
             <div class="dropdown">
                 <button class="btn btn-lg greenBtn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Select
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    {{!-- this will populate a drop down menu with catagories --}}
+                    <!--populate dropdown menu with database categories-->
                     {{#each data}}
                         {{> categories/categoryBlock}}
                     {{/each}}
