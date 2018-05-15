@@ -10,6 +10,7 @@ is then prompted for verbs, nouns, adverbs, etc. per needed within the story. Th
 
 <h2>Technologies Used</h2>
 <ul>
+
 <li>Handlebars - To more easily loop through data</li>
 <li>mySQL Workbench - primary sql gui used</li>
 <li>Sequalize - Simply mySQL seeding and queries</li>
@@ -17,7 +18,6 @@ is then prompted for verbs, nouns, adverbs, etc. per needed within the story. Th
 <li>Client-side Javascript - To capture and send user input from front end to backend</li>
 <li>Passport - Used to create a local and google Oauth login</li>
 <li>Bcrypt - To hash passwords</li>
-
 
 </ul>
 

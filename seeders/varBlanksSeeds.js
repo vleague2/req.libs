@@ -16,7 +16,7 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        varBlanks: "body part",
+        varBlanks: "noun (body part)",
         StoryId: 1,
         createdAt: new Date(),
         updatedAt: new Date()
@@ -34,7 +34,7 @@ module.exports = {
         updatedAt: new Date()
       }, 
       {
-        varBlanks: "body part",
+        varBlanks: "noun (body part)",
         StoryId: 1,
         createdAt: new Date(),
         updatedAt: new Date()
@@ -52,13 +52,13 @@ module.exports = {
         updatedAt: new Date()
       },  
       {
-        varBlanks: "emotion",
+        varBlanks: "adjective (emotion)",
         StoryId: 1,
         createdAt: new Date(),
         updatedAt: new Date()
       }, 
       {
-        varBlanks: "body part",
+        varBlanks: "noun (body part)",
         StoryId: 1,
         createdAt: new Date(),
         updatedAt: new Date()
@@ -80,8 +80,6 @@ module.exports = {
         StoryId: 2,
         createdAt: new Date(),
         updatedAt: new Date()
-         
-
      },
      {
          varBlanks: "verb",
