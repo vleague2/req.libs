@@ -2,7 +2,74 @@
 
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    return queryInterface.bulkInsert('VarBlanks', [{
+    return queryInterface.bulkInsert('VarBlanks', [
+      {
+        varBlanks: "noun",
+        StoryId: 1,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        varBlanks: "Noun",
+        StoryId: 1,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        varBlanks: "body part",
+        StoryId: 1,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      }, 
+      {
+        varBlanks: "past tense verb",
+        StoryId: 1,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },    
+      {
+        varBlanks: "past tense verb",
+        StoryId: 1,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      }, 
+      {
+        varBlanks: "body part",
+        StoryId: 1,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },  
+      {
+        varBlanks: "verb",
+        StoryId: 1,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        varBlanks: "adjective",
+        StoryId: 1,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },  
+      {
+        varBlanks: "emotion",
+        StoryId: 1,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      }, 
+      {
+        varBlanks: "body part",
+        StoryId: 1,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },  
+      {
+        varBlanks: "noun",
+        StoryId: 1,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      }, 
+    {
         varBlanks: "verb ending in (-ing)",
         StoryId: 2,
         createdAt: new Date(),
