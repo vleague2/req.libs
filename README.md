@@ -12,6 +12,7 @@ public/img/lilLibs.png
 
 <h2>Technologies Used</h2>
 <ul>
+
 <li>Handlebars - To more easily loop through data</li>
 <li>mySQL Workbench - primary sql gui used</li>
 <li>Sequalize - Simply mySQL seeding and queries</li>

@@ -4,7 +4,7 @@ const path = require('path');
 const passport = require('passport');
 const bcrypt = require('bcryptjs');
 const crypto = require('crypto');
-const keys = require('../config/keys');
+// const keys = require('../config/keys');
 
 const db = require('../models');
 
