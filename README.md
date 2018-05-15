@@ -20,8 +20,8 @@ is then prompted for verbs, nouns, adverbs, etc. per needed within the story. Th
 <h2>Authors</h2>
 <p>//i will later connect everyones name with an a tag to their github//</p>
 <ul>
-    <li><strong>Trey Warrick</strong> - <em> initial setup, webpack research, refactoring, this ReadMe </em></li>
-    <li><strong>Benjamin Vaccaro</strong> - <em> database creation, routing  </em></li>
+    <li><strong>Trey Warrick</strong> - <em> initial setup, webpack research, refactoring, front-end js </em></li>
+    <li><strong>Benjamin Vaccaro</strong> - <em> database creation, routing, handlebars  </em></li>
     <li><strong>Victoria League</strong> - <em> project management, UI, handlebars, refactoring </em></li>
     <li><strong>Alex Trilling</strong> - <em> Authentication </em></li>    
 </ul>
