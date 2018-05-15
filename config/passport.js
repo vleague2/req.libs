@@ -59,7 +59,7 @@ module.exports = function (passport) {
     passport.use(new GoogleStrategy({
             clientID: process.env.googleClientID,
             clientSecret: process.env.googleClientSecret,
-            callbackURL: "http://localhost:5000/auth/google/callback",
+            callbackURL: "https://req-libs.herokuapp.com/auth/google/callback",
             proxy: true
         },
         function (accessToken, refreshToken, profile, done) {
