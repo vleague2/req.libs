@@ -8,6 +8,7 @@ is then prompted for verbs, nouns, adverbs, etc. per needed within the story. Th
 public/img/lilLibs.png
 <p>click on the link below to play the game.</p> 
 <br>
+(public/img/titlePage.png)
 <p>https://req-libs.herokuapp.com/</p>
 
 <h2>Technologies Used</h2>
@@ -26,12 +27,11 @@ public/img/lilLibs.png
 
 <h2>Authors</h2>
 
-<ul>
-   <li><strong>[Trey Warrick]: https://github.com/iQuixotic</strong> - <em> initial setup, webpack research, refactoring, front-end js </em></li>
-    <li><strong>[Benjamin Vaccaro]:https://github.com/BenjaminJVaccaro</strong> - <em> database creation, routing, handlebars  </em></li>
-    <li><strong>[Victoria League]:https://github.com/vleague2/</strong> - <em> project management, UI, handlebars, refactoring </em></li>
-    <li><strong>[Alex Trilling]: https://github.com/Atrill90</strong> - <em> Authentication </em></li>    
-</ul>
+   *[Trey Warrick](https://github.com/iQuixotic) - initial setup, webpack research, refactoring, front-end js
+    *[Benjamin Vaccaro](https://github.com/BenjaminJVaccaro) - database creation, routing, handlebars  
+   *[Victoria League](https://github.com/vleague2/) - project management, UI, handlebars, refactoring 
+    * [Alex Trilling](https://github.com/Atrill90) - Authentication 
+
 
 
 <h2>The Future of this project</h2>
