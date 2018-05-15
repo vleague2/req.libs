@@ -102,7 +102,7 @@ html {
     background-color: #0e1930;
 }
 
-#button-row {
+.button-row {
     margin-top: 15px;
 }
 
@@ -125,7 +125,7 @@ html {
 }
 
 
-/* styling the user input page so that the spacing is nice */
+/* styling forms so that the spacing is nice */
 
 .form-control {
     margin-bottom: 15px;
@@ -133,24 +133,23 @@ html {
 
 
 /* styling for the notification that the story's been saved */
-#saved-story {
+.saved-story {
     color: #09814A;
     font-family: 'Open Sans', sans-serif;
 }
 
 
-/* profile page saved stories container */
+/* containers that need padding to accommodate footer */
 #profile-container {
     padding-bottom: 80px;
 }
 
-
-/* i have no idea what this is for */
-#continue {
-    color: #09814A;
-    font-family: 'Open Sans', sans-serif;
+#create-mode-container {
+    padding-bottom: 80px;
 }
 
-.midbox {
-    width: 450px;
+/* style for the username on the profile */
+#profile-username {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
 }

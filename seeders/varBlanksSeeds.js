@@ -257,6 +257,171 @@ module.exports = {
     createdAt: new Date(),
     updatedAt: new Date()
  },
+ {
+    varBlanks: "noun (thing)",
+    StoryId: 7,
+    createdAt: new Date(),
+    updatedAt: new Date()
+ 
+ },
+ {
+     varBlanks: "verb (ending in ing)",
+     StoryId: 7,
+     createdAt: new Date(),
+     updatedAt: new Date()
+  
+  },
+  {
+     varBlanks: "verb (past tense)",
+     StoryId: 7,
+     createdAt: new Date(),
+     updatedAt: new Date()
+  
+  },
+  {
+     varBlanks: "noun (plural)",
+     StoryId: 7,
+     createdAt: new Date(),
+     updatedAt: new Date()
+  },
+  {
+     varBlanks: "adjective",
+     StoryId: 7,
+     createdAt: new Date(),
+     updatedAt: new Date()
+  },
+  {
+     varBlanks: "noun",
+     StoryId: 7,
+     createdAt: new Date(),
+     updatedAt: new Date()
+  },
+  {
+     varBlanks: "noun",
+     StoryId: 7,
+     createdAt: new Date(),
+     updatedAt: new Date()
+  },
+  {
+    varBlanks: "noun",
+    StoryId: 8,
+    createdAt: new Date(),
+    updatedAt: new Date()
+ },
+ {
+     varBlanks: "noun",
+     StoryId: 8,
+     createdAt: new Date(),
+     updatedAt: new Date()
+  },
+  {
+     varBlanks: "verb",
+     StoryId: 8,
+     createdAt: new Date(),
+     updatedAt: new Date()
+  },
+  {
+     varBlanks: "noun",
+     StoryId: 8,
+     createdAt: new Date(),
+     updatedAt: new Date()
+  },
+  {
+     varBlanks: "verb",
+     StoryId: 8,
+     createdAt: new Date(),
+     updatedAt: new Date()
+  },
+  {
+     varBlanks: "noun",
+     StoryId: 8,
+     createdAt: new Date(),
+     updatedAt: new Date()
+  },
+  {
+     varBlanks: "noun",
+     StoryId: 8,
+     createdAt: new Date(),
+     updatedAt: new Date()
+  },
+  {
+     varBlanks: "noun",
+     StoryId: 8,
+     createdAt: new Date(),
+     updatedAt: new Date()
+  },
+  {
+    varBlanks: "animal",
+    StoryId: 9,
+    createdAt: new Date(),
+    updatedAt: new Date()
+  },
+  {
+    varBlanks: "animal",
+    StoryId: 9,
+    createdAt: new Date(),
+    updatedAt: new Date()
+  },
+  {
+    varBlanks: "adverb",
+    StoryId: 9,
+    createdAt: new Date(),
+    updatedAt: new Date()
+  },
+  {
+    varBlanks: "verb (past tense)",
+    StoryId: 9,
+    createdAt: new Date(),
+    updatedAt: new Date()
+  },
+  {
+    varBlanks: "body part (plural)",
+    StoryId: 9,
+    createdAt: new Date(),
+    updatedAt: new Date()
+  },
+  {
+    varBlanks: "verb (past tense)",
+    StoryId: 9,
+    createdAt: new Date(),
+    updatedAt: new Date()
+  },
+  {
+    varBlanks: "adjective",
+    StoryId: 9,
+    createdAt: new Date(),
+    updatedAt: new Date()
+  },
+  {
+    varBlanks: "animal",
+    StoryId: 9,
+    createdAt: new Date(),
+    updatedAt: new Date()
+  },
+  {
+    varBlanks: "adjective",
+    StoryId: 9,
+    createdAt: new Date(),
+    updatedAt: new Date()
+  },
+  {
+    varBlanks: "animal",
+    StoryId: 9,
+    createdAt: new Date(),
+    updatedAt: new Date()
+  },
+  {
+    varBlanks: "adjective",
+    StoryId: 9,
+    createdAt: new Date(),
+    updatedAt: new Date()
+  },
+  {
+    varBlanks: "verb (past tense)",
+    StoryId: 9,
+    createdAt: new Date(),
+    updatedAt: new Date()
+  },
     ], {});
   },
 

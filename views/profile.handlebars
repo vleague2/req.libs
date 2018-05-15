@@ -1,36 +1,41 @@
+<!--container to hold page content-->
 <div class="container" id="profile-container">
 
+  <!--row to hold page title-->
   <div class="row mt-4 mb-4">
     <div class="col-sm-12 text-center">
         <h1 class="title">Profile</h1>
     </div>
   </div>
 
-  <div class="row justify-content-center">
+  <!--row to hold username-->
+  <div class="row justify-content-center mb-5">
     <div class="col-sm-6 text-center">
-      {{!-- pull username from DB --}}
-      {{!-- <p class="label-font"><b>Username:</b></p> --}}
+      <p id="profile-username"><b>Username:</b> {{username}}</p>
     </div>
   </div>  
 
+  <!--row to hold the actions the user can take-->
   <div class="row">
-    <div class="col-sm-6 text-center">
-      {{!-- play new game --}}
+    <div class="col-sm-6 text-right">
+      <!--play a new game-->
       <a href="/start/{{username}}" class="title btn btn-lg greenBtn">Start a New Game</a>
     </div>
 
-    <div class="col-sm-6 text-center">
-      {{!-- play new game --}}
+    <div class="col-sm-6 text-left">
+      <!--add your own story-->
       <a href="/create/{{username}}" class="title btn btn-lg greenBtn">Add Your Own Story</a>
     </div>
   </div>  
 
+  <!--row to hold the subtitle for saved stories-->
   <div class="row mt-5 mb-4">
     <div class="col-sm-12 text-center">
         <h3 class="title">Saved Stories</h3>
     </div>
   </div>
 
+  <!--row to hold all of the user's stories-->
   <div class="row pb-5" id="profile-row">
     {{#each data}}
       {{> profile/storyBlock}}

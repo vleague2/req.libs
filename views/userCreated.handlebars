@@ -1,43 +1,129 @@
- 
-<form>
-    <div class="container">
+<!--container for page content-->
+<div class="container" id="create-mode-container">
 
-        <div class="row justify-content-center">
-            <div class="form-group">
-                <label for="story-title">Story Title</label>
-                <input type="text" class="form-control" id="story-title" placeholder="Story Title">
-            </div>
+    <!--row to hold the page title & description-->
+    <div class="row justify-content-center">
+        <div class="col-sm-8 text-center">
+            <h1 class="title">Add A Story</h1>
+            <p class="label-font mt-4">Use the textbox below to add your own story! When you want to add a blank spot, use the Add Blank button and enter what part of speech the blank stands for. You can add more specific details to the blank, such as "noun (bodypart)" or "noun (clothing)".</p>
         </div>
-
-        <div class="row justify-content-center">
-            <div class="form-group">
-                <label for="story-category">Story Category</label>
-                <input type="text" class="form-control" id="story-category" placeholder="Story Category">
-            </div>
-        </div>
-
-        <div class="row justify-content-center ">
-            <div class="col-sm-9 justify-content-center">
-                <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Example textarea</label>
-                    <textarea class="form-control" id="add-story-parts" rows="3"></textarea>
-                </div>
-            </div>
-            <div class="row">
-                <button type="button" id="add-speech-part" class="btn btn-primary">Add Blank</button>
-            </div>
-        </div>
-        <div>
-            <div class="row justify-content-center">
-                <div class="col-sm-9 justify-content-center">
-                <div class="form-group">
-                    
-                    <textarea class="form-control" id="catch-speech"  rows="1" placeholder="verb ending in -ing"></textarea>
-                </div>
-                <button type="button" id="submit-story" class="btn btn-primary">Submit Story</button>
-                </div>
-            </div>
-            </div>
-    <span id="username" data-id="{{username}}"></span>
     </div>
-</form>
+
+    <!--begin form-->
+    <form>
+
+        <!--row to hold the story title input and story category input-->
+        <div class="row mt-5">
+            <div class="col-sm-4 offset-sm-2">
+                <div class="form-group">
+                    <label for="story-title" class="label-font">Story Title</label>
+                    <input type="text" class="form-control" id="story-title" placeholder="Katniss Wakes Up">
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label for="story-category" class="label-font">Story Category</label>
+                    <input type="text" class="form-control" id="story-category" placeholder="Hunger Games">
+                </div>
+            </div>
+        </div>
+
+        <!--row to hold the story input and blanks input-->
+        <div class="row mt-4 mb-5">
+            <div class="col-sm-5 offset-sm-2">
+                <div class="form-group">
+                    <label for="add-story-parts" class="label-font">Type your story here</label>
+                    <textarea class="form-control" id="add-story-parts" rows="5"></textarea>
+                </div>
+            </div>
+
+            <div class="col-sm-3 text-center">
+                <div class="form-group"> 
+                    <label for="catch-speech" class="label-font">Part of Speech</label><span class="btn" data-toggle="modal" data-target=".modal"><i class="fas fa-question-circle"></i></span>
+
+                    <input type="text" class="form-control" id="catch-speech" placeholder="verb ending in -ing"></input>
+                </div>
+                
+                <button type="button" id="add-speech-part" class="btn btn-info btn-font">Add Blank</button>
+            </div>
+        </div>
+
+        <!--row to hold the submit button-->
+        <div class="row mt-5 pb-5">
+            <div class="col-sm-8 offset-sm-2 text-center">
+                <button type="button" id="submit-story" class="btn btn-lg greenBtn">Submit Story</button>
+            </div>
+        </div>
+
+        <!--row that will hold the dynamically appended success message-->
+        <div class="row">
+            <div class="col-sm-8 offset-sm-2 text-center" id="append-to"></div>
+        </div>
+
+        <!-- capturing and passing in username variable from server -->
+        <span id="username" data-id="{{username}}"></span>
+    </form>
+
+
+    <!-- Modal for parts of speech -->
+    <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title">Parts of Speech</h1>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <p>A <b>noun</b> is a word that denotes a person, place, or thing. In a sentence, nouns answer the questions who and what.</p>
+                            <ul>
+                                <li>Example 1: The <i>dog</i> ran after the ball.</li>
+                                <li>Example 2: I have an <i>apple</i> for lunch.</li>
+                                <li>Example 3: My living room has a <i>lamp</i>.</li>
+                            </ul>
+                            
+                        </div>
+                        <div class="col-sm-6">
+                            <p>An <b>adjective</b> is a word that modifies, or describes, a noun or pronoun.</p>
+                            <ul>
+                                <li>Example 1: We live in the <i>red</i> brick house.</li>
+                                <li>Example 2: She is <i>tall</i> for her age.</li>
+                                <li>Example 3: A cat’s litter box is <i>stinky</i>.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row mt-5">
+                        <div class="col-sm-6">
+                            <p>A <b>verb</b> is a word that denotes action, or a state of being, in a sentence.</p>
+                            <ul>
+                                <li>Example 1: The cat <i>runs</i> away frequently.</li>
+                                <li>Example 2: I like to <i>eat</i> apples for lunch.</li>
+                                <li>Example 3: My best friend <i>lives</i> far away.</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <p>An <b>adverb</b> is a word that modifies, or further describies, a verb. (Many, though not all, adverbs end in -ly.)</p>
+                            <ul>
+                                <li>Example 1: She usually laughs very <i>loudly</i>.</li>
+                                <li>Example 2: "No, I don't like pasta," he said <i>sadly</i>.</li>
+                                <li>Example 3: We ran across the street very <i>quickly</i>.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+

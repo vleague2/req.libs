@@ -4,8 +4,8 @@ const db = require("../models");
 const {ensureLoggedIn, guest} = require('../helpers/auth');
 
 // getting page for which catagory the user wants
-// need to add ensureLoggedIn when we want to protect the routes. Syntax: router.get("/", ensureLoggedIn, function ect)
-router.get("/:username", function(req, res) {
+
+router.get("/:username", ensureLoggedIn, function(req, res) {
   console.log("fetching objects..");
   // sequelize to query the categories for the drop down menu
   db.Story.findAll({group: 'category'}).then(data => {
@@ -14,15 +14,14 @@ router.get("/:username", function(req, res) {
       data: data,
       username: req.params.username
     }
-    // res.json(stories);
+
     // rendering category
     res.render("category", stories);
-      // passing in object "stories" with data
   })
 });
 
 // getting page for user to select which story they want
-router.get("/category/:username/:query", (req, res) => {
+router.get("/category/:username/:query",ensureLoggedIn, (req, res) => {
     console.log("fetching objects..");
     let query = req.params.query;
     query = query.replace("%20", " ");
@@ -45,7 +44,7 @@ router.get("/category/:username/:query", (req, res) => {
 });
 
 // getting page for user to input blanks based on story they selected
-router.get("/userInput/:username/:id", (req, res) => {
+router.get("/userInput/:username/:id", ensureLoggedIn, (req, res) => {
   console.log("fetching objects..");
   let storyName = ""
   db.Story.findOne({
@@ -73,13 +72,11 @@ router.get("/userInput/:username/:id", (req, res) => {
       storyName: storyName,
       username: req.params.username
     });
-    
-    // res.json(data);
   })
 });
 
 // getting page for user to read story they created
-router.post("/user-story/:username/:id", function(req, res) {
+router.post("/user-story/:username/:id", ensureLoggedIn, function(req, res) {
   console.log("posting...");
   // querying for the story they selected
   db.Story.findOne({
@@ -114,15 +111,8 @@ router.post("/user-story/:username/:id", function(req, res) {
       title: data.title,
       story: storyBody
     });
-    
-
   })
-
 });
-
-
-
-
 
 
 module.exports = router;

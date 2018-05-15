@@ -1,10 +1,14 @@
+<!--container to hold page content-->
 <div class="container">
+
+    <!--row to hold the story's title-->
     <div class="row">
         <div class="col-sm-12 text-center">
             <h1 class="title">{{title}}</h1>
         </div>
     </div>
 
+    <!--row to hold the story itself-->
     <div class="row justify-content-center mt-4 mb-3">
         <div class="col-sm-8">
               <p class="text-center">
@@ -13,15 +17,19 @@
         </div>
     </div>
 
+    <!--row to hold saved story notification-->
     <div class="row mt-5 mb-5">
         <div class="col-sm-12 text-center">
-            <p id="saved-story"><i class="far fa-check-circle"></i> Story saved automatically! </p> 
+            <p class="saved-story"><i class="far fa-check-circle"></i> Story saved automatically! </p> 
         </div>
     </div>
 
+    <!--row to hold user actions-->
     <div class="row text-center justify-content-center">
         <div class="col-sm-8">
+            <!--play a new game-->
             <a href="/start/{{username}}" class="btn mr-2 greenBtn">Play again</a>
+            <!--view your saved stories-->
             <a href="/profile/{{username}}" class="btn btn-info ml-2 label-font">View Saved Stories</a>
         </div>
     </div>

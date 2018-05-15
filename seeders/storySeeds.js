@@ -3,7 +3,7 @@
 module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.bulkInsert('Stories', [{
-        title: "Story 1",
+        title: "Mysterious Moment",
         body: `The door opened again, and the cold *** suddenly gusted through the 
         room, rustling the *** on the desk, swirling my hair around my ***. The girl 
         who came in merely *** to the desk, placed a note in the wire basket, and *** again. 
@@ -15,7 +15,7 @@ module.exports = {
          createdAt: new Date(),
         updatedAt: new Date()
      }, {
-        title: "Story 1",
+        title: "Katniss Wakes Up",
         body: `*** means fame and fortune.
 
         Losing means *** death. I guess
@@ -112,6 +112,55 @@ module.exports = {
   updatedAt: new Date()       
 },
 
+{
+  title: "The Accident",
+
+  body: `Naturally, the *** got a police escort to the county hospital. I felt ridiculous the whole time they were *** me. What made it worse was that Edward simply *** through the hospital doors under his own power. I ground my *** together.
+  They put me in the *** room, a long room with a line of beds separated by pastel-pattered curtains. A nurse put a pressure cuff on my arm and a thermometer under my ***. When the nurse walked away, I quickly unfastened the *** and threw it under the bed
+  .
+  `,
+  category: "Twilight",
+  createdAt: new Date(),
+  updatedAt: new Date()       
+},
+{
+  title: "Yoda Speaks",
+
+  body: `Size matters not. Look at me. Judge me by my ***, do you? 
+  
+  Hmm? Hmm. And well you should not. For my ally is the ***, and a powerful 
+  
+  ally it is. Life creates it, makes it ***. Its *** surrounds us and binds us. 
+  
+  Luminous beings are we, not this crude matter. You must *** the Force around 
+  
+  you; between you, me, the tree, the ***, everywhere. Yes, even between
+  
+  the *** and the ***.
+  `,
+  category: "Star Wars",
+  createdAt: new Date(),
+  updatedAt: new Date()       
+},
+{
+  title: "A Forest Encounter",
+
+  body: `"I knew it," Hagrid murmured. "There's something in here that shouldn't be."
+
+  "A ***?" Harry suggested.
+  
+  "That wasn't no werewolf and it wasn't no ***, neither," said Hagrid ***. "Right, follow me, but careful, now."
+  
+  They *** more slowly, *** straining for the faintest sound. Suddenly, in a clearing ahead, something definitely ***.
+  
+  "Who's there?" Hagrid called. "Show yourself -- I'm ***!"
+  
+  And into the clearing came ---- was it a man, or a ***? To the waist, a man, with *** hair and beard, but below that was a ***’s gleaming chestnut body with a ***, reddish tail. Harry and Hermione's jaws ***.
+  `,
+  category: "Harry Potter",
+  createdAt: new Date(),
+  updatedAt: new Date()
+},
     ], {});
   },
 

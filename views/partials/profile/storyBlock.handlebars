@@ -1,9 +1,10 @@
+<!--creates cards for each story the user has saved-->
 <div class="col-sm-6">
   <div class="card mb-4">
     <h5 class="card-header text-center">{{this.title}}</h5>
     <div class="card-body text-center">
       <p class="card-text">{{{this.body}}}</p>
-        <a href="/profile/edit/{{@root.username}}/{{this.id}}" class="btn btn-info mr-2">Rename Story</a> 
+        <!--delete button for each story-->
         <a href="/profile/delete/{{@root.username}}/{{this.id}}" class="btn btn-danger">Delete Story</a>    
     </div>
   </div>
