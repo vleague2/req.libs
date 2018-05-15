@@ -2,7 +2,7 @@ const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
 const bcrypt = require('bcryptjs');
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
-const keys = require('./keys');
+// const keys = require('./keys');
 
 const db = require('../models');
 // make sure to camel case, be consistent! Creating new instance of LocalStrategy, finding one user where username = username input
@@ -57,8 +57,8 @@ module.exports = function (passport) {
 
     /*********************GOOGLE STRATEGY CONFIG***************************** */
     passport.use(new GoogleStrategy({
-            clientID: keys.googleClientID,
-            clientSecret: keys.googleClientSecret,
+            clientID: process.env.googleClientID,
+            clientSecret: process.env.googleClientSecret,
             callbackURL: "http://localhost:5000/auth/google/callback",
             proxy: true
         },
