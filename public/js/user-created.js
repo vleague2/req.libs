@@ -24,9 +24,7 @@ $(document).ready( function() {
         // add newSpeech to the global array
         partOfSpeechArr.push(newSpeech);
 
-        // run the replacer function
-        // replacer();
-
+        // empty the blank field
         $("#catch-speech").val('');
     })
 
