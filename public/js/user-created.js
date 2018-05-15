@@ -69,7 +69,10 @@ $(document).ready( function() {
                 console.log(data);
 
                 // append a success message to page
-                $("#append-to").append("<p class='saved-story'><i class='far fa-check-circle'></i> Story saved!</p>")
+                $("#append-to").append("<p class='saved-story'><i class='far fa-check-circle'></i> Story saved!</p>");
+                $("#story-title").val('');
+                $("#story-category").val('');
+                $("#add-story-parts").val('');
             }
         });
     })
