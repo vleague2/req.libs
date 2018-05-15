@@ -4,7 +4,7 @@ const db = require("../models");
 const {ensureLoggedIn, guest} = require('../helpers/auth');
 
 // getting page for which catagory the user wants
-// need to add ensureLoggedIn when we want to protect the routes. Syntax: router.get("/", ensureLoggedIn, function ect)
+
 router.get("/:username", ensureLoggedIn, function(req, res) {
   console.log("fetching objects..");
   // sequelize to query the categories for the drop down menu
@@ -14,10 +14,9 @@ router.get("/:username", ensureLoggedIn, function(req, res) {
       data: data,
       username: req.params.username
     }
-    // res.json(stories);
+
     // rendering category
     res.render("category", stories);
-      // passing in object "stories" with data
   })
 });
 
@@ -73,8 +72,6 @@ router.get("/userInput/:username/:id", ensureLoggedIn, (req, res) => {
       storyName: storyName,
       username: req.params.username
     });
-    
-    // res.json(data);
   })
 });
 
@@ -114,15 +111,8 @@ router.post("/user-story/:username/:id", ensureLoggedIn, function(req, res) {
       title: data.title,
       story: storyBody
     });
-    
-
   })
-
 });
-
-
-
-
 
 
 module.exports = router;
