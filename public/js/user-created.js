@@ -70,6 +70,8 @@ $(document).ready( function() {
 
                 // append a success message to page
                 $("#append-to").append("<p class='saved-story'><i class='far fa-check-circle'></i> Story saved!</p>");
+                
+                // empty form on page
                 $("#story-title").val('');
                 $("#story-category").val('');
                 $("#add-story-parts").val('');
