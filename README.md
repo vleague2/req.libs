@@ -4,6 +4,8 @@
 is then prompted for verbs, nouns, adverbs, etc. per needed within the story. The paragraph is then combined with the user's input and a story is shown to the user.</p>
 
 <h2>Getting Started</h2>
+
+public/img/lilLibs.png
 <p>click on the link below to play the game.</p> 
 <br>
 <p>https://req-libs.herokuapp.com/</p>
@@ -19,15 +21,16 @@ is then prompted for verbs, nouns, adverbs, etc. per needed within the story. Th
 <li>Passport - Used to create a local and google Oauth login</li>
 <li>Bcrypt - To hash passwords</li>
 
+
 </ul>
 
 <h2>Authors</h2>
 
 <ul>
-   <li><strong>Trey Warrick - https://github.com/iQuixotic</strong> - <em> initial setup, webpack research, refactoring, front-end js </em></li>
-    <li><strong>Benjamin Vaccaro - https://github.com/BenjaminJVaccaro</strong> - <em> database creation, routing, handlebars  </em></li>
-    <li><strong>Victoria League - https://github.com/vleague2/</strong> - <em> project management, UI, handlebars, refactoring </em></li>
-    <li><strong>Alex Trilling - https://github.com/Atrill90</strong> - <em> Authentication </em></li>    
+   <li><strong>[Trey Warrick]: https://github.com/iQuixotic</strong> - <em> initial setup, webpack research, refactoring, front-end js </em></li>
+    <li><strong>[Benjamin Vaccaro]:https://github.com/BenjaminJVaccaro</strong> - <em> database creation, routing, handlebars  </em></li>
+    <li><strong>[Victoria League]:https://github.com/vleague2/</strong> - <em> project management, UI, handlebars, refactoring </em></li>
+    <li><strong>[Alex Trilling]: https://github.com/Atrill90</strong> - <em> Authentication </em></li>    
 </ul>
 
 
