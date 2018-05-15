@@ -29,48 +29,48 @@ $(document).ready( function() {
 
         $("#catch-speech").val('');
     })
-})
 
-// post ajax on submit button 
-$("#submit-story").click( function (){
+    // post ajax on submit button 
+    $("#submit-story").click( function (){
 
-    console.log('i am working');
+        console.log('i am working');
 
-    // grab username out of the username span
-    let username = $("#username").data("id");
+        // grab username out of the username span
+        let username = $("#username").data("id");
 
-    console.log(username);
+        console.log(username);
 
-    // grab story title from input
-    let title = $("#story-title").val();
+        // grab story title from input
+        let title = $("#story-title").val();
 
-    // grab story category from input
-    let category = $("#story-category").val();
-    
-    // create an object to send to server 
-    let data = {
-        story: wholeStory,
-        speech: partOfSpeechArr,
-        username: username,
-        category: category,
-        title: title
-    }
-
-    // run ajax call as a post
-    $.ajax({
-        load: console.log(data),
-        type: 'POST',
-        // concatenate username to ajax call
-        url: '/create/' + username,
-        data: data,
-
-        // when call is successful
-        success: function (data) {
-            console.log('i sent the data')
-            console.log(data);
-
-            // append a success message to page
-            $("#append-to").append("<p class='saved-story'><i class='far fa-check-circle'></i> Story saved!</p>")
+        // grab story category from input
+        let category = $("#story-category").val();
+        
+        // create an object to send to server 
+        let data = {
+            story: wholeStory,
+            speech: partOfSpeechArr,
+            username: username,
+            category: category,
+            title: title
         }
-    });
+
+        // run ajax call as a post
+        $.ajax({
+            load: console.log(data),
+            type: 'POST',
+            // concatenate username to ajax call
+            url: '/create/' + username,
+            data: data,
+
+            // when call is successful
+            success: function (data) {
+                console.log('i sent the data')
+                console.log(data);
+
+                // append a success message to page
+                $("#append-to").append("<p class='saved-story'><i class='far fa-check-circle'></i> Story saved!</p>")
+            }
+        });
+    })
 });
