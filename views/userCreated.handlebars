@@ -1,11 +1,18 @@
- <div class="container" id="create-mode-container">
+<!--container for page content-->
+<div class="container" id="create-mode-container">
+
+    <!--row to hold the page title & description-->
     <div class="row justify-content-center">
         <div class="col-sm-8 text-center">
             <h1 class="title">Add A Story</h1>
             <p class="label-font mt-4">Use the textbox below to add your own story! When you want to add a blank spot, use the Add Blank button and enter what part of speech the blank stands for. You can add more specific details to the blank, such as "noun (bodypart)" or "noun (clothing)".</p>
         </div>
     </div>
+
+    <!--begin form-->
     <form>
+
+        <!--row to hold the story title input and story category input-->
         <div class="row mt-5">
             <div class="col-sm-4 offset-sm-2">
                 <div class="form-group">
@@ -22,6 +29,7 @@
             </div>
         </div>
 
+        <!--row to hold the story input and blanks input-->
         <div class="row mt-4 mb-5">
             <div class="col-sm-5 offset-sm-2">
                 <div class="form-group">
@@ -40,20 +48,20 @@
                 <button type="button" id="add-speech-part" class="btn btn-info btn-font">Add Blank</button>
             </div>
         </div>
- 
+
+        <!--row to hold the submit button-->
         <div class="row mt-5 pb-5">
             <div class="col-sm-8 offset-sm-2 text-center">
                 <button type="button" id="submit-story" class="btn btn-lg greenBtn">Submit Story</button>
             </div>
         </div>
 
+        <!--row that will hold the dynamically appended success message-->
         <div class="row">
-            <div class="col-sm-8 offset-sm-2 text-center" id="append-to">
-                
-            </div>
+            <div class="col-sm-8 offset-sm-2 text-center" id="append-to"></div>
         </div>
 
-        {{!-- capturing and passing in username variable from server --}}
+        <!-- capturing and passing in username variable from server -->
         <span id="username" data-id="{{username}}"></span>
     </form>
 
@@ -116,9 +124,6 @@
             </div>
         </div>
     </div>
-
-
-
 
 </div>
 
