@@ -1,54 +1,55 @@
 
-<h1>Req.libs</h1>
-<p>This is a <em>Mad Libs</em> inspired game in which the user picks from one of several categories. The user
-is then prompted for verbs, nouns, adverbs, etc. per needed within the story. The paragraph is then combined with the user's input and a story is shown to the user.</p>
+# Req.libs
+This is a *Mad Libs* inspired game in which the user picks from one of several categories. The user
+is then prompted for verbs, nouns, adverbs, etc. per needed within the story. The paragraph is then combined with the user's input and a story is shown to the user. This project's purpose was to, as a team, create a full stack application complete with an express router, a database, and polished UI.
 
-<h2>Getting Started</h2>
-
-public/img/lilLibs.png
-<p>click on the link below to play the game.</p> 
-<br>
-(public/img/titlePage.png)
-<p>https://req-libs.herokuapp.com/</p>
-
-<h2>Technologies Used</h2>
-<ul>
-
-<li>Handlebars - To more easily loop through data</li>
-<li>mySQL Workbench - primary sql gui used</li>
-<li>Sequalize - Simply mySQL seeding and queries</li>
-<li>Node.js - routing</li>
-<li>Client-side Javascript - To capture and send user input from front end to backend</li>
-<li>Passport - Used to create a local and google Oauth login</li>
-<li>Bcrypt - To hash passwords</li>
+## Getting Started
 
 
-</ul>
+click on the link below to play the game.
 
-<h2>Authors</h2>
+ ![image](public/img/titlePage.png)
 
-   *[Trey Warrick](https://github.com/iQuixotic) - initial setup, webpack research, refactoring, front-end js
-    *[Benjamin Vaccaro](https://github.com/BenjaminJVaccaro) - database creation, routing, handlebars  
-   *[Victoria League](https://github.com/vleague2/) - project management, UI, handlebars, refactoring 
-    * [Alex Trilling](https://github.com/Atrill90) - Authentication 
+https://req-libs.herokuapp.com/
+
+## Technologies Used
+
+
+* Handlebars - To more easily loop through data
+* mySQL Workbench - primary sql gui used
+* Sequalize - Simply mySQL seeding and queries
+* Node.js - routing
+* Client-side Javascript - To capture and send user input from front end to backend
+* Passport - Used to create a local and google Oauth login
+* Bcrypt - To hash passwords
 
 
 
-<h2>The Future of this project</h2>
-<p> If we were to do a version 2, we would love to inclued a multiplayer feature in which stories could be compared and friends could upvote which was the best story. Another multiplayer idea was for friends to take turns filling in blanks on the same story and see what came up. Other future versions may include to limit the visisbility of your user made stories.</p>
-<p>This project's purpose was to, as a team, create a full stack application complete with an express router, 
-a database, and polished UI.</p>
+
+ ## Authors
+
+* [Trey Warrick](https://github.com/iQuixotic) - initial setup, webpack research, refactoring, front-end js
+* [Benjamin Vaccaro](https://github.com/BenjaminJVaccaro) - database creation, routing, handlebars  
+* [Victoria League](https://github.com/vleague2/) - project management, UI, handlebars, refactoring 
+* [Alex Trilling](https://github.com/Atrill90) - Authentication 
 
 
 
-<h2>Acknowledgments</h2>
-<ul>
-    <p>A special thanks to:</p>
-    <li>MadLibs - for providing a great source of inspiration to this project</li>
-    <li>Trilogy -  for providing useful handlebars reference material </li>
-    <li>John Dinsmore, Mark Powalisz, and Tamara Hall - For helping with general questions, advice, and deployment.<li> 
-    <li>Darren Kay - For his help with setting up authentication <li> 
+## The Future of this project
+If we were to do a version 2, we would love to inclued a multiplayer feature in which stories could be compared and friends could upvote which was the best story. Another multiplayer idea was for friends to take turns filling in blanks on the same story and see what came up. Other future versions may include to limit the visisbility of your user made stories.
 
 
-</ul>
+
+
+## Acknowledgments
+
+A special thanks to:
+
+* MadLibs - for providing a great source of inspiration to this project
+* Trilogy -  for providing useful handlebars reference material 
+* John Dinsmore, Mark Powalisz, and Tamara Hall - For helping with general questions, advice, and deployment. 
+* Darren Kay - For his help with setting up authentication  
+
+
+
 
