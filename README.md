@@ -6,25 +6,28 @@ is then prompted for verbs, nouns, adverbs, etc. per needed within the story. Th
 <h2>Getting Started</h2>
 <p>click on the link below to play the game.</p> 
 <br>
-<p><a>some link here</a></p>
+<p>https://req-libs.herokuapp.com/</p>
 
 <h2>Technologies Used</h2>
 <ul>
-<li>Handlebars - Something here about how was used</li>
-<li>mySQL - Something here about how was used</li>
-<li>Sequalize - Something here about how  was used</li>
-<li>Node.js - Something here about how  was used</li>
-<li>Client-side Javascript - Something here about how  was used</li>
+
+<li>Handlebars - To more easily loop through data</li>
+<li>mySQL Workbench - primary sql gui used</li>
+<li>Sequalize - Simply mySQL seeding and queries</li>
+<li>Node.js - routing</li>
+<li>Client-side Javascript - To capture and send user input from front end to backend</li>
+<li>Passport - Used to create a local and google Oauth login</li>
+<li>Bcrypt - To hash passwords</li>
 
 </ul>
 
 <h2>Authors</h2>
 
 <ul>
-   <li><strong>Trey Warrick - (https://github.com/iQuixotic)</strong> - <em> initial setup, webpack research, refactoring, front-end js </em></li>
-    <li><strong>Benjamin Vaccaro - (https://github.com/BenjaminJVaccaro)</strong> - <em> database creation, routing, handlebars  </em></li>
-    <li><strong>Victoria League - (https://github.com/vleague2/)</strong> - <em> project management, UI, handlebars, refactoring </em></li>
-    <li><strong>Alex Trilling - (https://github.com/Atrill90)</strong> - <em> Authentication </em></li>    
+   <li><strong>Trey Warrick - https://github.com/iQuixotic</strong> - <em> initial setup, webpack research, refactoring, front-end js </em></li>
+    <li><strong>Benjamin Vaccaro - https://github.com/BenjaminJVaccaro</strong> - <em> database creation, routing, handlebars  </em></li>
+    <li><strong>Victoria League - https://github.com/vleague2/</strong> - <em> project management, UI, handlebars, refactoring </em></li>
+    <li><strong>Alex Trilling - https://github.com/Atrill90</strong> - <em> Authentication </em></li>    
 </ul>
 
 
@@ -41,6 +44,7 @@ a database, and polished UI.</p>
     <li>MadLibs - for providing a great source of inspiration to this project</li>
     <li>Trilogy -  for providing useful handlebars reference material </li>
     <li>John Dinsmore, Mark Powalisz, and Tamara Hall - For helping with general questions, advice, and deployment.<li> 
+    <li>Darren Kay - For his help with setting up authentication <li> 
 
 
 </ul>
