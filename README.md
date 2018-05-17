@@ -30,7 +30,7 @@ https://req-libs.herokuapp.com/
 * [Trey Warrick](https://github.com/iQuixotic) - initial setup, webpack research, refactoring, front-end js
 * [Benjamin Vaccaro](https://github.com/BenjaminJVaccaro) - database creation, routing, handlebars  
 * [Victoria League](https://github.com/vleague2/) - project management, UI, handlebars, refactoring 
-* [Alex Trilling](https://github.com/Atrill90) - Authentication 
+* [Alex Trilling](https://github.com/Atrill90) - Authentication, user routes, user models
 
 
 ## The Future of this Project
